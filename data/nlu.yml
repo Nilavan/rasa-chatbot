@@ -1,0 +1,55 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - thanks
+
+- intent: choose_language
+  examples: |
+    - language
+    - show languages
+    - change language
+    - english
+    - swahili
+    - kikuyu
+
+- intent: main_menu
+  examples: |
+    - Show main menu
+    - menu
+
+- intent: select_option
+  examples: |
+    - download app
+    - provide info
+    - stay updated
+    - get community info
+
+- intent: download_app
+  examples: |
+    - yes
+    - no
+
+- intent: anything_else
+  examples: |
+    - yes
+    - no

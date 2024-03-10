@@ -1,0 +1,152 @@
+version: "3.1"
+
+stories:
+
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: choose language english and show menu
+  steps: 
+  - intent: choose_language
+    entities:
+    - option: "eng"
+  - action: utter_main_menu_eng
+
+- story: choose language swahili and show menu
+  steps: 
+  - intent: choose_language
+    entities:
+    - option: "sw"
+  - action: utter_main_menu_sw
+
+- story: choose language kikuyu and show menu
+  steps: 
+  - intent: choose_language
+    entities:
+    - option: "kik"
+  - action: utter_main_menu_kik
+
+- story: select yes to download app in english
+  steps:
+  - action: utter_main_menu_eng
+  - intent: select_option
+    entities:
+    - option: "download_app"
+  - action: utter_download_app_eng
+  - intent: download_app
+    entities:
+    - choice: "yes"
+  - action: utter_download_app_steps_eng
+  - action: utter_anything_else_eng
+
+- story: select yes to download app in swahili
+  steps:
+  - action: utter_main_menu_sw
+  - intent: select_option
+    entities:
+    - option: "download_app"
+  - action: utter_download_app_sw
+  - intent: download_app
+    entities:
+    - choice: "yes"
+  - action: utter_download_app_steps_sw
+  - action: utter_anything_else_sw
+
+- story: select yes to download app in kikuyu
+  steps:
+  - action: utter_main_menu_kik
+  - intent: select_option
+    entities:
+    - option: "download_app"
+  - action: utter_download_app_kik
+  - intent: download_app
+    entities:
+    - choice: "yes"
+  - action: utter_download_app_steps_kik
+  - action: utter_anything_else_kik
+
+- story: select no to download app in english
+  steps:
+  - action: utter_main_menu_eng
+  - intent: select_option
+    entities:
+    - option: "download_app"
+  - action: utter_download_app_eng
+  - intent: download_app
+    entities:
+    - choice: "no"
+  - action: utter_anything_else_eng
+
+- story: select no to download app in swahili
+  steps:
+  - action: utter_main_menu_sw
+  - intent: select_option
+    entities:
+    - option: "download_app"
+  - action: utter_download_app_sw
+  - intent: download_app
+    entities:
+    - choice: "no"
+  - action: utter_anything_else_sw
+
+- story: select no to download app in kikuyu
+  steps:
+  - action: utter_main_menu_kik
+  - intent: select_option
+    entities:
+    - option: "download_app"
+  - action: utter_download_app_kik
+  - intent: download_app
+    entities:
+    - choice: "no"
+  - action: utter_anything_else_kik
+
+- story: select yes to anything else in english
+  steps:
+  - action: utter_anything_else_eng
+  - intent: anything_else
+    entities:
+    - choice: "yes"
+  - action: utter_main_menu_eng
+
+- story: select yes to anything else in swahili
+  steps:
+  - action: utter_anything_else_sw
+  - intent: anything_else
+    entities:
+    - choice: "yes"
+  - action: utter_main_menu_sw
+
+- story: select yes to anything else in kikuyu
+  steps:
+  - action: utter_anything_else_kik
+  - intent: anything_else
+    entities:
+    - choice: "yes"
+  - action: utter_main_menu_kik
+
+- story: select no to anything else in english
+  steps:
+  - action: utter_anything_else_eng
+  - intent: anything_else
+    entities:
+    - choice: "no"
+  - action: utter_goodbye_eng
+
+- story: select no to anything else in swahili
+  steps:
+  - action: utter_anything_else_sw
+  - intent: anything_else
+    entities:
+    - choice: "no"
+  - action: utter_goodbye_sw
+
+- story: select no to anything else in kikuyu
+  steps:
+  - action: utter_anything_else_kik
+  - intent: anything_else
+    entities:
+    - choice: "no"
+  - action: utter_goodbye_kik

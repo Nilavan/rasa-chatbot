@@ -1,0 +1,179 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - main_menu
+  - choose_language
+  - select_option
+  - download_app
+  - anything_else
+
+actions:
+  - utter_greet
+  - utter_main_menu_eng
+  - utter_main_menu_sw
+  - utter_main_menu_kik
+  - utter_download_app_eng
+  - utter_download_app_sw
+  - utter_download_app_kik
+  - utter_download_app_steps_eng
+  - utter_download_app_steps_sw
+  - utter_download_app_steps_kik
+  - utter_anything_else_eng
+  - utter_anything_else_sw
+  - utter_anything_else_kik
+  - utter_goodbye_eng
+  - utter_goodbye_sw
+  - utter_goodbye_kik
+
+entities:
+  - language
+  - option
+  - choice
+
+slots:
+  language:
+    type: text
+    mappings:
+      - type: from_text
+        entity: language
+  option:
+    type: text
+    mappings:
+      - type: from_text
+        entity: option
+  choice:
+    type: text
+    mappings:
+      - type: from_text
+        entity: choice
+
+responses:
+  utter_greet:
+    - text: "Hi! Welcome to our chatbot. Please choose your language:"
+      buttons:
+        - title: "English"
+          payload: '/choose_language{{"language": "eng"}}'
+        - title: "Swahili"
+          payload: '/choose_language{{"language": "sw"}}'
+        - title: "Kikuyu"
+          payload: '/choose_language{{"language": "kik"}}'
+
+  utter_main_menu_eng:
+    - text: "Welcome! Please choose an option:"
+      buttons:
+        - title: "Download app"
+          payload: '/select_option{{"option": "download_app"}}'
+        - title: "Provide information"
+          payload: '/select_option{{"option": "provide_info"}}'
+        - title: "Stay updated"
+          payload: '/select_option{{"option": "stay_updated"}}'
+        - title: "Community initiatives"
+          payload: '/select_option{{"option": "get_community_info"}}'
+
+  utter_main_menu_sw:
+    - text: "Karibu! Tafadhali chagua chaguo:"
+      buttons:
+        - title: "Pakua programu"
+          payload: '/select_option{{"option": "download_app"}}'
+        - title: "Toa maelezo"
+          payload: '/select_option{{"option": "provide_info"}}'
+        - title: "Kaa updated"
+          payload: '/select_option{{"option": "stay_updated"}}'
+        - title: "Michakato ya jamii"
+          payload: '/select_option{{"option": "get_community_info"}}'
+
+  utter_main_menu_kik:
+    - text: "Karibu! Tafadhali chagua chaguo:"
+      buttons:
+        - title: "Thandika app"
+          payload: '/select_option{{"option": "download_app"}}'
+        - title: "Niaithie mahuandikio"
+          payload: '/select_option{{"option": "provide_info"}}'
+        - title: "Hariha"
+          payload: '/select_option{{"option": "stay_updated"}}'
+        - title: "Gutaniria mihitigio ya ciumia"
+          payload: '/select_option{{"option": "get_community_info"}}'
+
+  utter_download_app_eng:
+    - text: "Would you like to download the 'DIRP' app?"
+      buttons:
+        - title: "Yes"
+          payload: '/download_app{{"choice": "yes"}}'
+        - title: "No"
+          payload: '/download_app{{"choice": "no"}}'
+  
+  utter_download_app_sw:
+    - text: "Ungependa kupakua programu ya 'DIRP'?"
+      buttons:
+        - title: "Ndiyo"
+          payload: '/download_app{{"choice": "yes"}}'
+        - title: "Hapana"
+          payload: '/download_app{{"choice": "no"}}'
+  
+  utter_download_app_kik:
+    - text: "Wendete gukata na kurithira app ya 'DIRP'?"
+      buttons:
+        - title: "Eee"
+          payload: '/download_app{{"choice": "yes"}}'
+        - title: "Apana"
+          payload: '/download_app{{"choice": "no"}}'
+
+  utter_download_app_steps_eng:
+    - text: "To download the 'DIRP' app, follow these steps:
+      \n1. Go to the App Store or Google Play Store.
+      \n2. Search for 'DIRP'.
+      \n3. Download and install the app.
+      \n4. You can find more information and download the app from [here](link_to_app)."
+
+  utter_download_app_steps_sw:
+    - text: "Kupakua programu ya 'DIRP', fuata hatua hizi:
+      \n1. Nenda kwa Duka la App au Duka la Google Play.
+      \n2. Tafuta 'DIRP'.
+      \n3. Pakua na usakinishe programu.
+      \n4. Unaweza kupata maelezo zaidi na kupakua programu kutoka [hapa](link_to_app)."
+  
+  utter_download_app_steps_kik:
+    - text: "Kurithira app ya 'DIRP', gukaria mwomboko mugiko:
+      \n1. Ota kwa Duka ria Riari kana Duka ria Google Play.
+      \n2. Turagia 'DIRP'.
+      \n3. Rithira na ugorithirie app.
+      \n4. Wendete kurathira maitumere na kwathira app kwa [hapa](link_to_app)."
+    
+  utter_anything_else_eng:
+    - text: "Is there anything else I can assist you with?"
+      buttons:
+        - title: "Yes"
+          payload: '/anything_else{{"choice": "yes"}}'
+        - title: "No"
+          payload: '/anything_else{{"choice": "no"}}'
+  
+  utter_anything_else_sw:
+    - text: "Kuna kitu kingine naweza kukusaidia nacho?"
+      buttons:
+        - title: "Ndiyo"
+          payload: '/anything_else{{"choice": "yes"}}'
+        - title: "Hapana"
+          payload: '/anything_else{{"choice": "no"}}'
+  
+  utter_anything_else_kik:
+    - text: "Niathi cia arumenya andu niundithirie?"
+      buttons:
+        - title: "Eee"
+          payload: '/anything_else{{"choice": "yes"}}'
+        - title: "Apana"
+          payload: '/anything_else{{"choice": "no"}}'
+  
+  utter_goodbye_eng:
+    - text: "Goodbye! Have a great day."
+  
+  utter_goodbye_sw:
+    - text: "Kwaheri! Uwe na siku njema."
+  
+  utter_goodbye_kik:
+    - text: "Nakitare! Na ruciu ruriri."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
