@@ -1,5 +1,4 @@
 version: "3.1"
-
 nlu:
 - intent: greet
   examples: |
@@ -16,13 +15,11 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-
 - intent: goodbye
   examples: |
     - bye
     - goodbye
     - thanks
-
 - intent: choose_language
   examples: |
     - language
@@ -31,25 +28,81 @@ nlu:
     - english
     - swahili
     - kikuyu
-
 - intent: main_menu
   examples: |
     - Show main menu
     - menu
-
 - intent: select_option
   examples: |
     - download app
     - provide info
     - stay updated
     - get community info
-
 - intent: download_app
   examples: |
     - yes
     - no
-
 - intent: anything_else
   examples: |
     - yes
     - no
+- intent: oil_spill
+  examples: |
+    - oil spill
+    - spilled oil
+    - environmental oil accident
+    - kumwagika kwa mafuta
+    - tukio la mafuta kumwagika
+    - mshuko wa mafuta
+    - kuringana ria maaku
+    - kumwagika wa maaku
+    - kuringana wa maaku
+- intent: forest_fire
+  examples: |
+    - forest fire
+    - bushfire
+    - wildfire
+    - moto wa misitu
+    - moto wa kichaka
+    - moto wa mwitu
+    - moto kichakani
+    - moto mkubwa wa misitu
+    - moto wa kichaka kikubwa
+    - moto wa kichaka kubwa
+    - fire
+- intent: pollution
+  examples: |
+    - pollution
+    - environmental pollution
+    - air pollution
+    - noise pollution
+    - uchafuzi wa mazingira
+    - uchafuzi wa hewa
+    - uchafuzi wa sauti
+    - uchafu wa riari
+    - uchafu wa mazingira
+    - uchafu wa hewa
+    - uchafuzi
+- intent: wildlife_poaching
+  examples: |
+    - wildlife poaching
+    - illegal hunting
+    - animal trafficking
+    - ujangili wa wanyamapori
+    - ujangili wa wanyama
+    - uwindaji haramu
+    - ufangiria wa nyamathuri
+    - ufangiria wa wanyamapori
+    - uzungu wa nyama
+- intent: climate_change
+  examples: |
+    - climate change
+    - global warming
+    - greenhouse effect
+    - mabadiliko ya hali ya hewa
+    - ongezeko la joto duniani
+    - athari ya kijani
+    - mbarura ya uhenia
+    - ongezeko la joto
+    - athari ya joto
+    - mabadiliko

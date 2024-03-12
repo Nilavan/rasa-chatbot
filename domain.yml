@@ -8,6 +8,11 @@ intents:
   - select_option
   - download_app
   - anything_else
+  - oil_spill
+  - forest_fire
+  - pollution
+  - wildlife_poaching
+  - climate_change
 
 actions:
   - utter_greet
@@ -65,9 +70,9 @@ responses:
       buttons:
         - title: "Download app"
           payload: '/select_option{{"option": "download_app"}}'
-        - title: "Provide information"
+        - title: "Social and environmental incidents"
           payload: '/select_option{{"option": "provide_info"}}'
-        - title: "Stay updated"
+        - title: "Countering misinformation"
           payload: '/select_option{{"option": "stay_updated"}}'
         - title: "Community initiatives"
           payload: '/select_option{{"option": "get_community_info"}}'
@@ -77,9 +82,9 @@ responses:
       buttons:
         - title: "Pakua programu"
           payload: '/select_option{{"option": "download_app"}}'
-        - title: "Toa maelezo"
+        - title: "Matukio ya kijamii na mazingira"
           payload: '/select_option{{"option": "provide_info"}}'
-        - title: "Kaa updated"
+        - title: "Kupinga habari za uongo"
           payload: '/select_option{{"option": "stay_updated"}}'
         - title: "Michakato ya jamii"
           payload: '/select_option{{"option": "get_community_info"}}'
@@ -89,9 +94,9 @@ responses:
       buttons:
         - title: "Thandika app"
           payload: '/select_option{{"option": "download_app"}}'
-        - title: "Niaithie mahuandikio"
+        - title: "Mithukiri ya ciana na iria"
           payload: '/select_option{{"option": "provide_info"}}'
-        - title: "Hariha"
+        - title: "Kúgeria kúrihúra-ini ya maúma maúmwoya"
           payload: '/select_option{{"option": "stay_updated"}}'
         - title: "Gutaniria mihitigio ya ciumia"
           payload: '/select_option{{"option": "get_community_info"}}'
@@ -140,7 +145,51 @@ responses:
       \n2. Turagia 'DIRP'.
       \n3. Rithira na ugorithirie app.
       \n4. Wendete kurathira maitumere na kwathira app kwa [hapa](link_to_app)."
+
+  utter_social_incident_question_eng:
+    - text: "Please share some details about the incident"
+
+  utter_social_incident_question_sw:
+    - text: "Tafadhali shiriki maelezo kuhusu tukio"
+
+  utter_social_incident_question_kik:
+    - text: "Níyúríke tene naírutia kúríoya tukio"
+
+  utter_guide_oil_spill_eng:
+    - text: "An oil spill is a release of a liquid petroleum hydrocarbon into the environment, especially marine areas, due to human activity. It causes harm to marine life and ecosystems. To learn more about oil spills, you can visit [link_to_resource]."
+  utter_guide_oil_spill_sw:
+    - text: "Kumwagika kwa mafuta ni kutolewa kwa hidrokarboni ya mafuta iliyeyuka kwenye mazingira, haswa maeneo ya baharini, kutokana na shughuli za kibinadamu. Inasababisha madhara kwa maisha ya baharini na mifumo ya ikolojia. Ili kujifunza zaidi kuhusu kumwagika kwa mafuta, unaweza kutembelea [kiungo_kwa_rasilimali]."
+  utter_guide_oil_spill_kik:
+    - text: "Uruma wa mafuta ni kuiganirwo giakwa miruha thabiragia na mafuta macia-ini nyingi maraini, iria gukua miangaza, ngwatiragia iria bururi. Iria gitugia iria gaandu na miti-ini. Ndariha hahingi kuhitugia, wahiha gutuire mai na ciumia-ini nyingi thi [kiugo_kwa_rasilimali]."
     
+  utter_guide_forest_fire_eng:
+    - text: "A forest fire is an uncontrolled fire occurring in nature, often in forests or wooded areas. It can cause extensive damage to flora, fauna, and habitats. To learn more about forest fires, you can visit [link_to_resource]."
+  utter_guide_forest_fire_sw:
+    - text: "Moto wa misitu ni moto usiodhibitiwa unaotokea kiasili, mara nyingi katika misitu au maeneo yenye miti. Inaweza kusababisha uharibifu mkubwa kwa mimea, wanyama, na makazi. Ili kujifunza zaidi kuhusu moto wa misitu, unaweza kutembelea [kiungo_kwa_rasilimali]."
+  utter_guide_forest_fire_kik:
+    - text: "Moto wa githaka ni moto utanabari ucio ta thakua kihateireiria, gitahi-ini giterereire, nigitekera ciumia na mahuri. Thiikire rui na thangari aandu, miti-ini na miti. Ndariha hahingi kuhitugia, wahiha gutuire mai na ciumia-ini nyingi thi [kiugo_kwa_rasilimali]."
+
+  utter_guide_pollution_eng:
+    - text: "Pollution is the introduction of harmful or poisonous substances into the environment. It can occur through various human activities such as industrial processes, transportation, and waste disposal. To learn more about pollution, you can visit [link_to_resource]."
+  utter_guide_pollution_sw:
+    - text: "Uchafuzi ni uingizaji wa vitu vinavyoweza kudhuru au sumu kwenye mazingira. Unaweza kutokea kupitia shughuli mbalimbali za kibinadamu kama vile michakato ya viwanda, usafirishaji, na utupaji wa taka. Ili kujifunza zaidi kuhusu uchafuzi, unaweza kutembelea [kiungo_kwa_rasilimali]."
+  utter_guide_pollution_kik:
+    - text: "Uharibifu ni utungo wa miruru-ini iria-ini itumaga kuomera maraini na macia. Kiumaga kiheteireiria gituma mbau-ini nyingi, niaraguo na miti. Ndariha hahingi kuhitugia, wahiha gutuire mai na ciumia-ini nyingi thi [kiugo_kwa_rasilimali]."
+
+  utter_guide_wildlife_poaching_eng:
+    - text: "Wildlife poaching is the illegal hunting or capturing of wild animals. It poses a serious threat to biodiversity and can lead to the extinction of endangered species. To learn more about wildlife poaching, you can visit [link_to_resource]."
+  utter_guide_wildlife_poaching_sw:
+    - text: "Ujangili wa wanyama pori ni uwindaji au kukamata wanyama pori kinyume cha sheria. Unatishia sana bioanuwai na inaweza kusababisha kutoweka kwa spishi zilizo hatarini. Ili kujifunza zaidi kuhusu ujangili wa wanyama pori, unaweza kutembelea [kiungo_kwa_rasilimali]."
+  utter_guide_wildlife_poaching_kik:
+    - text: "Uumira wa miruha-ini ni ukiruta-ini na kuriririria iria wanyama wiga. Gaiukaguo niagiririrwo niendete-ini na, miti iria. Ndariha hahingi kuhitugia, wahiha gutuire mai na ciumia-ini nyingi thi [kiugo_kwa_rasilimali]."
+
+  utter_guide_climate_change_eng:
+    - text: "Climate change refers to long-term shifts in temperature, precipitation, wind patterns, and other aspects of Earth's climate. Causes include human activities such as burning fossil fuels and deforestation. To learn more about climate change, you can visit [link_to_resource]."
+  utter_guide_climate_change_sw:
+    - text: "Mabadiliko ya hali ya hewa yanahusu mabadiliko marefu katika joto, mvua, mifumo ya upepo, na vipengele vingine vya hali ya hewa ya Dunia. Sababu zinazosababisha ni pamoja na shughuli za kibinadamu kama vile kuchoma mafuta ya mafuta na ukataji miti. Ili kujifunza zaidi kuhusu mabadiliko ya hali ya hewa, unaweza kutembelea [kiungo_kwa_rasilimali]."
+  utter_guide_climate_change_kik:
+    - text: "Mudirwo-ini wa macia maraini-ini uyu-ini wendete wa kihateireiria waikari wa kihateireiria wa tene mbara na rari-ini miru-ini maraini wa wendete-ini. Ire naiguthi-ini niagira thi ukomaka thi umereireiria wa mbara na mugi. Iu macia ma waiguthagirwo-ini wendete wa wendo thi kurambiriria [kiugo_kwa_rasilimali]."
+
   utter_anything_else_eng:
     - text: "Is there anything else I can assist you with?"
       buttons:
