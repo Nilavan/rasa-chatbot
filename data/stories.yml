@@ -2,875 +2,875 @@ version: "3.1"
 
 stories:
 
-- story: greet
-  steps:
-  - intent: greet
-  - action: utter_greet
+# - story: greet
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
 
-- story: choose language english and show menu
-  steps: 
-  - intent: choose_language
-    entities:
-    - option: "eng"
-  - action: utter_main_menu_eng
+# - story: choose language english and show menu
+#   steps: 
+#   - intent: choose_language
+#     entities:
+#     - option: eng
+#   - action: utter_main_menu_eng
 
-- story: choose language swahili and show menu
-  steps: 
-  - intent: choose_language
-    entities:
-    - option: "sw"
-  - action: utter_main_menu_sw
+# - story: choose language swahili and show menu
+#   steps: 
+#   - intent: choose_language
+#     entities:
+#     - option: sw
+#   - action: utter_main_menu_sw
 
-- story: choose language kikuyu and show menu
-  steps: 
-  - intent: choose_language
-    entities:
-    - option: "kik"
-  - action: utter_main_menu_kik
+# - story: choose language kikuyu and show menu
+#   steps: 
+#   - intent: choose_language
+#     entities:
+#     - option: kik
+#   - action: utter_main_menu_kik
 
-- story: select yes to download app in english
-  steps:
-  - action: utter_main_menu_eng
-  - intent: select_option
-    entities:
-    - option: "download_app"
-  - action: utter_download_app_eng
-  - intent: download_app
-    entities:
-    - choice: "yes"
-  - action: utter_download_app_steps_eng
-  - action: utter_anything_else_eng
+# - story: select yes to download app in english
+#   steps:
+#   - action: utter_main_menu_eng
+#   - intent: select_option
+#     entities:
+#     - option: download_app
+#   - action: utter_download_app_eng
+#   - intent: download_app
+#     entities:
+#     - choice: yes
+#   - action: utter_download_app_steps_eng
+#   - action: utter_anything_else_eng
 
-- story: select yes to download app in swahili
-  steps:
-  - action: utter_main_menu_sw
-  - intent: select_option
-    entities:
-    - option: "download_app"
-  - action: utter_download_app_sw
-  - intent: download_app
-    entities:
-    - choice: "yes"
-  - action: utter_download_app_steps_sw
-  - action: utter_anything_else_sw
+# - story: select yes to download app in swahili
+#   steps:
+#   - action: utter_main_menu_sw
+#   - intent: select_option
+#     entities:
+#     - option: download_app
+#   - action: utter_download_app_sw
+#   - intent: download_app
+#     entities:
+#     - choice: yes
+#   - action: utter_download_app_steps_sw
+#   - action: utter_anything_else_sw
 
-- story: select yes to download app in kikuyu
-  steps:
-  - action: utter_main_menu_kik
-  - intent: select_option
-    entities:
-    - option: "download_app"
-  - action: utter_download_app_kik
-  - intent: download_app
-    entities:
-    - choice: "yes"
-  - action: utter_download_app_steps_kik
-  - action: utter_anything_else_kik
+# - story: select yes to download app in kikuyu
+#   steps:
+#   - action: utter_main_menu_kik
+#   - intent: select_option
+#     entities:
+#     - option: download_app
+#   - action: utter_download_app_kik
+#   - intent: download_app
+#     entities:
+#     - choice: yes
+#   - action: utter_download_app_steps_kik
+#   - action: utter_anything_else_kik
 
-- story: select no to download app in english
-  steps:
-  - action: utter_main_menu_eng
-  - intent: select_option
-    entities:
-    - option: "download_app"
-  - action: utter_download_app_eng
-  - intent: download_app
-    entities:
-    - choice: "no"
-  - action: utter_anything_else_eng
+# - story: select no to download app in english
+#   steps:
+#   - action: utter_main_menu_eng
+#   - intent: select_option
+#     entities:
+#     - option: download_app
+#   - action: utter_download_app_eng
+#   - intent: download_app
+#     entities:
+#     - choice: no
+#   - action: utter_anything_else_eng
 
-- story: select no to download app in swahili
-  steps:
-  - action: utter_main_menu_sw
-  - intent: select_option
-    entities:
-    - option: "download_app"
-  - action: utter_download_app_sw
-  - intent: download_app
-    entities:
-    - choice: "no"
-  - action: utter_anything_else_sw
+# - story: select no to download app in swahili
+#   steps:
+#   - action: utter_main_menu_sw
+#   - intent: select_option
+#     entities:
+#     - option: download_app
+#   - action: utter_download_app_sw
+#   - intent: download_app
+#     entities:
+#     - choice: no
+#   - action: utter_anything_else_sw
 
-- story: select no to download app in kikuyu
-  steps:
-  - action: utter_main_menu_kik
-  - intent: select_option
-    entities:
-    - option: "download_app"
-  - action: utter_download_app_kik
-  - intent: download_app
-    entities:
-    - choice: "no"
-  - action: utter_anything_else_kik
+# - story: select no to download app in kikuyu
+#   steps:
+#   - action: utter_main_menu_kik
+#   - intent: select_option
+#     entities:
+#     - option: download_app
+#   - action: utter_download_app_kik
+#   - intent: download_app
+#     entities:
+#     - choice: no
+#   - action: utter_anything_else_kik
 
-- story: select incidents option and user asks for oil spill in english
-  steps:
-  - action: utter_main_menu_eng
-  - intent: select_option
-    entities:
-    - option: "provide_info"
-  - action: utter_social_incident_question_eng
-  - intent: oil_spill
-  - action: utter_guide_oil_spill_eng
-  - action: utter_anything_else_eng
+# - story: select incidents option and user asks for oil spill in english
+#   steps:
+#   - action: utter_main_menu_eng
+#   - intent: select_option
+#     entities:
+#     - option: provide_info
+#   - action: utter_social_incident_question_eng
+#   - intent: oil_spill
+#   - action: utter_guide_oil_spill_eng
+#   - action: utter_anything_else_eng
 
-- story: select incidents option and user asks for forest fire in english
-  steps:
-  - action: utter_main_menu_eng
-  - intent: select_option
-    entities:
-    - option: "provide_info"
-  - action: utter_social_incident_question_eng
-  - intent: forest_fire
-  - action: utter_guide_forest_fire_eng
-  - action: utter_anything_else_eng
+# - story: select incidents option and user asks for forest fire in english
+#   steps:
+#   - action: utter_main_menu_eng
+#   - intent: select_option
+#     entities:
+#     - option: provide_info
+#   - action: utter_social_incident_question_eng
+#   - intent: forest_fire
+#   - action: utter_guide_forest_fire_eng
+#   - action: utter_anything_else_eng
 
-- story: select incidents option and user asks for pollution in english
-  steps:
-  - action: utter_main_menu_eng
-  - intent: select_option
-    entities:
-    - option: "provide_info"
-  - action: utter_social_incident_question_eng
-  - intent: pollution
-  - action: utter_guide_pollution_eng
-  - action: utter_anything_else_eng
+# - story: select incidents option and user asks for pollution in english
+#   steps:
+#   - action: utter_main_menu_eng
+#   - intent: select_option
+#     entities:
+#     - option: provide_info
+#   - action: utter_social_incident_question_eng
+#   - intent: pollution
+#   - action: utter_guide_pollution_eng
+#   - action: utter_anything_else_eng
 
-- story: select incidents option and user asks for wildlife poaching in english
-  steps:
-  - action: utter_main_menu_eng
-  - intent: select_option
-    entities:
-    - option: "provide_info"
-  - action: utter_social_incident_question_eng
-  - intent: wildlife_poaching
-  - action: utter_guide_wildlife_poaching_eng
-  - action: utter_anything_else_eng
+# - story: select incidents option and user asks for wildlife poaching in english
+#   steps:
+#   - action: utter_main_menu_eng
+#   - intent: select_option
+#     entities:
+#     - option: provide_info
+#   - action: utter_social_incident_question_eng
+#   - intent: wildlife_poaching
+#   - action: utter_guide_wildlife_poaching_eng
+#   - action: utter_anything_else_eng
 
-- story: select incidents option and user asks for climate change in english
-  steps:
-  - action: utter_main_menu_eng
-  - intent: select_option
-    entities:
-    - option: "provide_info"
-  - action: utter_social_incident_question_eng
-  - intent: climate_change
-  - action: utter_guide_climate_change_eng
-  - action: utter_anything_else_eng
+# - story: select incidents option and user asks for climate change in english
+#   steps:
+#   - action: utter_main_menu_eng
+#   - intent: select_option
+#     entities:
+#     - option: provide_info
+#   - action: utter_social_incident_question_eng
+#   - intent: climate_change
+#   - action: utter_guide_climate_change_eng
+#   - action: utter_anything_else_eng
 
-- story: select incidents option and user asks for oil spill in swahili
-  steps:
-  - action: utter_main_menu_sw
-  - intent: select_option
-    entities:
-    - option: "provide_info"
-  - action: utter_social_incident_question_sw
-  - intent: oil_spill
-  - action: utter_guide_oil_spill_sw
-  - action: utter_anything_else_sw
+# - story: select incidents option and user asks for oil spill in swahili
+#   steps:
+#   - action: utter_main_menu_sw
+#   - intent: select_option
+#     entities:
+#     - option: provide_info
+#   - action: utter_social_incident_question_sw
+#   - intent: oil_spill
+#   - action: utter_guide_oil_spill_sw
+#   - action: utter_anything_else_sw
 
-- story: select incidents option and user asks for forest fire in swahili
-  steps:
-  - action: utter_main_menu_sw
-  - intent: select_option
-    entities:
-    - option: "provide_info"
-  - action: utter_social_incident_question_sw
-  - intent: forest_fire
-  - action: utter_guide_forest_fire_sw
-  - action: utter_anything_else_sw
+# - story: select incidents option and user asks for forest fire in swahili
+#   steps:
+#   - action: utter_main_menu_sw
+#   - intent: select_option
+#     entities:
+#     - option: provide_info
+#   - action: utter_social_incident_question_sw
+#   - intent: forest_fire
+#   - action: utter_guide_forest_fire_sw
+#   - action: utter_anything_else_sw
 
-- story: select incidents option and user asks for pollution in swahili
-  steps:
-  - action: utter_main_menu_sw
-  - intent: select_option
-    entities:
-    - option: "provide_info"
-  - action: utter_social_incident_question_sw
-  - intent: pollution
-  - action: utter_guide_pollution_sw
-  - action: utter_anything_else_sw
+# - story: select incidents option and user asks for pollution in swahili
+#   steps:
+#   - action: utter_main_menu_sw
+#   - intent: select_option
+#     entities:
+#     - option: provide_info
+#   - action: utter_social_incident_question_sw
+#   - intent: pollution
+#   - action: utter_guide_pollution_sw
+#   - action: utter_anything_else_sw
 
-- story: select incidents option and user asks for wildlife poaching in swahili
-  steps:
-  - action: utter_main_menu_sw
-  - intent: select_option
-    entities:
-    - option: "provide_info"
-  - action: utter_social_incident_question_sw
-  - intent: wildlife_poaching
-  - action: utter_guide_wildlife_poaching_sw
-  - action: utter_anything_else_sw
+# - story: select incidents option and user asks for wildlife poaching in swahili
+#   steps:
+#   - action: utter_main_menu_sw
+#   - intent: select_option
+#     entities:
+#     - option: provide_info
+#   - action: utter_social_incident_question_sw
+#   - intent: wildlife_poaching
+#   - action: utter_guide_wildlife_poaching_sw
+#   - action: utter_anything_else_sw
 
-- story: select incidents option and user asks for climate change in swahili
-  steps:
-  - action: utter_main_menu_sw
-  - intent: select_option
-    entities:
-    - option: "provide_info"
-  - action: utter_social_incident_question_sw
-  - intent: climate_change
-  - action: utter_guide_climate_change_sw
-  - action: utter_anything_else_sw
+# - story: select incidents option and user asks for climate change in swahili
+#   steps:
+#   - action: utter_main_menu_sw
+#   - intent: select_option
+#     entities:
+#     - option: provide_info
+#   - action: utter_social_incident_question_sw
+#   - intent: climate_change
+#   - action: utter_guide_climate_change_sw
+#   - action: utter_anything_else_sw
 
-- story: select incidents option and user asks for oil spill in kikuyu
-  steps:
-  - action: utter_main_menu_kik
-  - intent: select_option
-    entities:
-    - option: "provide_info"
-  - action: utter_social_incident_question_kik
-  - intent: oil_spill
-  - action: utter_guide_oil_spill_kik
-  - action: utter_anything_else_kik
+# - story: select incidents option and user asks for oil spill in kikuyu
+#   steps:
+#   - action: utter_main_menu_kik
+#   - intent: select_option
+#     entities:
+#     - option: provide_info
+#   - action: utter_social_incident_question_kik
+#   - intent: oil_spill
+#   - action: utter_guide_oil_spill_kik
+#   - action: utter_anything_else_kik
 
-- story: select incidents option and user asks for forest fire in kikuyu
-  steps:
-  - action: utter_main_menu_kik
-  - intent: select_option
-    entities:
-    - option: "provide_info"
-  - action: utter_social_incident_question_kik
-  - intent: forest_fire
-  - action: utter_guide_forest_fire_kik
-  - action: utter_anything_else_kik
+# - story: select incidents option and user asks for forest fire in kikuyu
+#   steps:
+#   - action: utter_main_menu_kik
+#   - intent: select_option
+#     entities:
+#     - option: provide_info
+#   - action: utter_social_incident_question_kik
+#   - intent: forest_fire
+#   - action: utter_guide_forest_fire_kik
+#   - action: utter_anything_else_kik
 
-- story: select incidents option and user asks for pollution in kikuyu
-  steps:
-  - action: utter_main_menu_kik
-  - intent: select_option
-    entities:
-    - option: "provide_info"
-  - action: utter_social_incident_question_kik
-  - intent: pollution
-  - action: utter_guide_pollution_kik
-  - action: utter_anything_else_kik
+# - story: select incidents option and user asks for pollution in kikuyu
+#   steps:
+#   - action: utter_main_menu_kik
+#   - intent: select_option
+#     entities:
+#     - option: provide_info
+#   - action: utter_social_incident_question_kik
+#   - intent: pollution
+#   - action: utter_guide_pollution_kik
+#   - action: utter_anything_else_kik
 
-- story: select incidents option and user asks for wildlife poaching in kikuyu
-  steps:
-  - action: utter_main_menu_kik
-  - intent: select_option
-    entities:
-    - option: "provide_info"
-  - action: utter_social_incident_question_kik
-  - intent: wildlife_poaching
-  - action: utter_guide_wildlife_poaching_kik
-  - action: utter_anything_else_kik
+# - story: select incidents option and user asks for wildlife poaching in kikuyu
+#   steps:
+#   - action: utter_main_menu_kik
+#   - intent: select_option
+#     entities:
+#     - option: provide_info
+#   - action: utter_social_incident_question_kik
+#   - intent: wildlife_poaching
+#   - action: utter_guide_wildlife_poaching_kik
+#   - action: utter_anything_else_kik
 
-- story: select incidents option and user asks for climate change in kikuyu
-  steps:
-  - action: utter_main_menu_kik
-  - intent: select_option
-    entities:
-    - option: "provide_info"
-  - action: utter_social_incident_question_kik
-  - intent: climate_change
-  - action: utter_guide_climate_change_kik
-  - action: utter_anything_else_kik
+# - story: select incidents option and user asks for climate change in kikuyu
+#   steps:
+#   - action: utter_main_menu_kik
+#   - intent: select_option
+#     entities:
+#     - option: provide_info
+#   - action: utter_social_incident_question_kik
+#   - intent: climate_change
+#   - action: utter_guide_climate_change_kik
+#   - action: utter_anything_else_kik
 
-- story: select yes to anything else in english
-  steps:
-  - action: utter_anything_else_eng
-  - intent: anything_else
-    entities:
-    - choice: "yes"
-  - action: utter_main_menu_eng
+# - story: select yes to anything else in english
+#   steps:
+#   - action: utter_anything_else_eng
+#   - intent: anything_else
+#     entities:
+#     - choice: yes
+#   - action: utter_main_menu_eng
 
-- story: select yes to anything else in swahili
-  steps:
-  - action: utter_anything_else_sw
-  - intent: anything_else
-    entities:
-    - choice: "yes"
-  - action: utter_main_menu_sw
+# - story: select yes to anything else in swahili
+#   steps:
+#   - action: utter_anything_else_sw
+#   - intent: anything_else
+#     entities:
+#     - choice: yes
+#   - action: utter_main_menu_sw
 
-- story: select yes to anything else in kikuyu
-  steps:
-  - action: utter_anything_else_kik
-  - intent: anything_else
-    entities:
-    - choice: "yes"
-  - action: utter_main_menu_kik
+# - story: select yes to anything else in kikuyu
+#   steps:
+#   - action: utter_anything_else_kik
+#   - intent: anything_else
+#     entities:
+#     - choice: yes
+#   - action: utter_main_menu_kik
 
-- story: select no to anything else in english
-  steps:
-  - action: utter_anything_else_eng
-  - intent: anything_else
-    entities:
-    - choice: "no"
-  - action: utter_goodbye_eng
+# - story: select no to anything else in english
+#   steps:
+#   - action: utter_anything_else_eng
+#   - intent: anything_else
+#     entities:
+#     - choice: no
+#   - action: utter_goodbye_eng
 
-- story: select no to anything else in swahili
-  steps:
-  - action: utter_anything_else_sw
-  - intent: anything_else
-    entities:
-    - choice: "no"
-  - action: utter_goodbye_sw
+# - story: select no to anything else in swahili
+#   steps:
+#   - action: utter_anything_else_sw
+#   - intent: anything_else
+#     entities:
+#     - choice: no
+#   - action: utter_goodbye_sw
 
-- story: select no to anything else in kikuyu
-  steps:
-  - action: utter_anything_else_kik
-  - intent: anything_else
-    entities:
-    - choice: "no"
-  - action: utter_goodbye_kik
+# - story: select no to anything else in kikuyu
+#   steps:
+#   - action: utter_anything_else_kik
+#   - intent: anything_else
+#     entities:
+#     - choice: no
+#   - action: utter_goodbye_kik
 
-- story: greet and choose language english and download app and after anything else is no greet again and choose language swahili and download app
-  steps:
-  - intent: greet
-  - slot_was_set:
-    - language: hi
-  - slot_was_set:
-    - option: hi
-  - slot_was_set:
-    - choice: hi
-  - action: utter_greet
-  - intent: choose_language
-    entities:
-    - language: eng
-  - slot_was_set:
-    - language: '/choose_language{"language": "eng"}'
-  - slot_was_set:
-    - option: '/choose_language{"language": "eng"}'
-  - slot_was_set:
-    - choice: '/choose_language{"language": "eng"}'
-  - action: utter_main_menu_eng
-  - intent: select_option
-    entities:
-    - option: download_app
-  - slot_was_set:
-    - language: '/select_option{"option": "download_app"}'
-  - slot_was_set:
-    - option: '/select_option{"option": "download_app"}'
-  - slot_was_set:
-    - choice: '/select_option{"option": "download_app"}'
-  - action: utter_download_app_eng
-  - intent: download_app
-    entities:
-    - choice: yes
-  - slot_was_set:
-    - language: '/download_app{"choice": "yes"}'
-  - slot_was_set:
-    - option: '/download_app{"choice": "yes"}'
-  - slot_was_set:
-    - choice: '/download_app{"choice": "yes"}'
-  - action: utter_download_app_steps_eng
-  - action: utter_anything_else_eng
-  - intent: anything_else
-    entities:
-    - choice: yes
-  - slot_was_set:
-    - language: '/anything_else{"choice": "yes"}'
-  - slot_was_set:
-    - option: '/anything_else{"choice": "yes"}'
-  - slot_was_set:
-    - choice: '/anything_else{"choice": "yes"}'
-  - action: utter_main_menu_eng
-  - intent: select_option
-    entities:
-    - option: download_app
-  - slot_was_set:
-    - language: '/select_option{"option": "download_app"}'
-  - slot_was_set:
-    - option: '/select_option{"option": "download_app"}'
-  - slot_was_set:
-    - choice: '/select_option{"option": "download_app"}'
-  - action: utter_download_app_eng
-  - intent: download_app
-    entities:
-    - choice: yes
-  - slot_was_set:
-    - language: '/download_app{"choice": "yes"}'
-  - slot_was_set:
-    - option: '/download_app{"choice": "yes"}'
-  - slot_was_set:
-    - choice: '/download_app{"choice": "yes"}'
-  - action: utter_download_app_steps_eng
-  - action: utter_anything_else_eng
-  - intent: anything_else
-    entities:
-    - choice: no
-  - slot_was_set:
-    - language: '/anything_else{"choice": "no"}'
-  - slot_was_set:
-    - option: '/anything_else{"choice": "no"}'
-  - slot_was_set:
-    - choice: '/anything_else{"choice": "no"}'
-  - action: utter_goodbye_eng
-  - intent: greet
-  - slot_was_set:
-    - language: hi
-  - slot_was_set:
-    - option: hi
-  - slot_was_set:
-    - choice: hi
-  - action: utter_greet
-  - intent: choose_language
-    entities:
-    - language: sw
-  - slot_was_set:
-    - language: '/choose_language{"language": "sw"}'
-  - slot_was_set:
-    - option: '/choose_language{"language": "sw"}'
-  - slot_was_set:
-    - choice: '/choose_language{"language": "sw"}'
-  - action: utter_main_menu_sw
-  - intent: select_option
-    entities:
-    - option: download_app
-  - slot_was_set:
-    - language: '/select_option{"option": "download_app"}'
-  - slot_was_set:
-    - option: '/select_option{"option": "download_app"}'
-  - slot_was_set:
-    - choice: '/select_option{"option": "download_app"}'
-  - action: utter_download_app_sw
-  - intent: download_app
-    entities:
-    - choice: yes
-  - slot_was_set:
-    - language: '/download_app{"choice": "yes"}'
-  - slot_was_set:
-    - option: '/download_app{"choice": "yes"}'
-  - slot_was_set:
-    - choice: '/download_app{"choice": "yes"}'
-  - action: utter_download_app_steps_sw
-  - action: utter_anything_else_sw
-  - intent: anything_else
-    entities:
-    - choice: yes
-  - slot_was_set:
-    - language: '/anything_else{"choice": "yes"}'
-  - slot_was_set:
-    - option: '/anything_else{"choice": "yes"}'
-  - slot_was_set:
-    - choice: '/anything_else{"choice": "yes"}'
-  - action: utter_main_menu_sw
-  - intent: select_option
-    entities:
-    - option: download_app
-  - slot_was_set:
-    - language: '/select_option{"option": "download_app"}'
-  - slot_was_set:
-    - option: '/select_option{"option": "download_app"}'
-  - slot_was_set:
-    - choice: '/select_option{"option": "download_app"}'
-  - action: utter_download_app_sw
-  - intent: download_app
-    entities:
-    - choice: no
-  - slot_was_set:
-    - language: '/download_app{"choice": "no"}'
-  - slot_was_set:
-    - option: '/download_app{"choice": "no"}'
-  - slot_was_set:
-    - choice: '/download_app{"choice": "no"}'
-  - action: utter_anything_else_sw
-  - intent: anything_else
-    entities:
-    - choice: no
-  - slot_was_set:
-    - language: '/anything_else{"choice": "no"}'
-  - slot_was_set:
-    - option: '/anything_else{"choice": "no"}'
-  - slot_was_set:
-    - choice: '/anything_else{"choice": "no"}'
-  - action: utter_goodbye_sw
-  - intent: select_option
-  - slot_was_set:
-    - language: /stop
-  - slot_was_set:
-    - option: /stop
-  - slot_was_set:
-    - choice: /stop
+# - story: greet and choose language english and download app and after anything else is no greet again and choose language swahili and download app
+#   steps:
+#   - intent: greet
+#   - slot_was_set:
+#     - language: hi
+#   - slot_was_set:
+#     - option: hi
+#   - slot_was_set:
+#     - choice: hi
+#   - action: utter_greet
+#   - intent: choose_language
+#     entities:
+#     - language: eng
+#   - slot_was_set:
+#     - language: '/choose_language{"language": "eng"}'
+#   - slot_was_set:
+#     - option: '/choose_language{"language": "eng"}'
+#   - slot_was_set:
+#     - choice: '/choose_language{"language": "eng"}'
+#   - action: utter_main_menu_eng
+#   - intent: select_option
+#     entities:
+#     - option: download_app
+#   - slot_was_set:
+#     - language: '/select_option{"option": "download_app"}'
+#   - slot_was_set:
+#     - option: '/select_option{"option": "download_app"}'
+#   - slot_was_set:
+#     - choice: '/select_option{"option": "download_app"}'
+#   - action: utter_download_app_eng
+#   - intent: download_app
+#     entities:
+#     - choice: yes
+#   - slot_was_set:
+#     - language: '/download_app{"choice": "yes"}'
+#   - slot_was_set:
+#     - option: '/download_app{"choice": "yes"}'
+#   - slot_was_set:
+#     - choice: '/download_app{"choice": "yes"}'
+#   - action: utter_download_app_steps_eng
+#   - action: utter_anything_else_eng
+#   - intent: anything_else
+#     entities:
+#     - choice: yes
+#   - slot_was_set:
+#     - language: '/anything_else{"choice": "yes"}'
+#   - slot_was_set:
+#     - option: '/anything_else{"choice": "yes"}'
+#   - slot_was_set:
+#     - choice: '/anything_else{"choice": "yes"}'
+#   - action: utter_main_menu_eng
+#   - intent: select_option
+#     entities:
+#     - option: download_app
+#   - slot_was_set:
+#     - language: '/select_option{"option": "download_app"}'
+#   - slot_was_set:
+#     - option: '/select_option{"option": "download_app"}'
+#   - slot_was_set:
+#     - choice: '/select_option{"option": "download_app"}'
+#   - action: utter_download_app_eng
+#   - intent: download_app
+#     entities:
+#     - choice: yes
+#   - slot_was_set:
+#     - language: '/download_app{"choice": "yes"}'
+#   - slot_was_set:
+#     - option: '/download_app{"choice": "yes"}'
+#   - slot_was_set:
+#     - choice: '/download_app{"choice": "yes"}'
+#   - action: utter_download_app_steps_eng
+#   - action: utter_anything_else_eng
+#   - intent: anything_else
+#     entities:
+#     - choice: no
+#   - slot_was_set:
+#     - language: '/anything_else{"choice": "no"}'
+#   - slot_was_set:
+#     - option: '/anything_else{"choice": "no"}'
+#   - slot_was_set:
+#     - choice: '/anything_else{"choice": "no"}'
+#   - action: utter_goodbye_eng
+#   - intent: greet
+#   - slot_was_set:
+#     - language: hi
+#   - slot_was_set:
+#     - option: hi
+#   - slot_was_set:
+#     - choice: hi
+#   - action: utter_greet
+#   - intent: choose_language
+#     entities:
+#     - language: sw
+#   - slot_was_set:
+#     - language: '/choose_language{"language": "sw"}'
+#   - slot_was_set:
+#     - option: '/choose_language{"language": "sw"}'
+#   - slot_was_set:
+#     - choice: '/choose_language{"language": "sw"}'
+#   - action: utter_main_menu_sw
+#   - intent: select_option
+#     entities:
+#     - option: download_app
+#   - slot_was_set:
+#     - language: '/select_option{"option": "download_app"}'
+#   - slot_was_set:
+#     - option: '/select_option{"option": "download_app"}'
+#   - slot_was_set:
+#     - choice: '/select_option{"option": "download_app"}'
+#   - action: utter_download_app_sw
+#   - intent: download_app
+#     entities:
+#     - choice: yes
+#   - slot_was_set:
+#     - language: '/download_app{"choice": "yes"}'
+#   - slot_was_set:
+#     - option: '/download_app{"choice": "yes"}'
+#   - slot_was_set:
+#     - choice: '/download_app{"choice": "yes"}'
+#   - action: utter_download_app_steps_sw
+#   - action: utter_anything_else_sw
+#   - intent: anything_else
+#     entities:
+#     - choice: yes
+#   - slot_was_set:
+#     - language: '/anything_else{"choice": "yes"}'
+#   - slot_was_set:
+#     - option: '/anything_else{"choice": "yes"}'
+#   - slot_was_set:
+#     - choice: '/anything_else{"choice": "yes"}'
+#   - action: utter_main_menu_sw
+#   - intent: select_option
+#     entities:
+#     - option: download_app
+#   - slot_was_set:
+#     - language: '/select_option{"option": "download_app"}'
+#   - slot_was_set:
+#     - option: '/select_option{"option": "download_app"}'
+#   - slot_was_set:
+#     - choice: '/select_option{"option": "download_app"}'
+#   - action: utter_download_app_sw
+#   - intent: download_app
+#     entities:
+#     - choice: no
+#   - slot_was_set:
+#     - language: '/download_app{"choice": "no"}'
+#   - slot_was_set:
+#     - option: '/download_app{"choice": "no"}'
+#   - slot_was_set:
+#     - choice: '/download_app{"choice": "no"}'
+#   - action: utter_anything_else_sw
+#   - intent: anything_else
+#     entities:
+#     - choice: no
+#   - slot_was_set:
+#     - language: '/anything_else{"choice": "no"}'
+#   - slot_was_set:
+#     - option: '/anything_else{"choice": "no"}'
+#   - slot_was_set:
+#     - choice: '/anything_else{"choice": "no"}'
+#   - action: utter_goodbye_sw
+#   - intent: select_option
+#   - slot_was_set:
+#     - language: /stop
+#   - slot_was_set:
+#     - option: /stop
+#   - slot_was_set:
+#     - choice: /stop
 
-- story: greet and choose language english and check info for oil spill
-  steps:
-  - intent: greet
-  - slot_was_set:
-    - language: hi
-  - slot_was_set:
-    - option: hi
-  - slot_was_set:
-    - choice: hi
-  - action: utter_greet
-  - intent: choose_language
-    entities:
-    - language: eng
-  - slot_was_set:
-    - language: '/choose_language{"language": "eng"}'
-  - slot_was_set:
-    - option: '/choose_language{"language": "eng"}'
-  - slot_was_set:
-    - choice: '/choose_language{"language": "eng"}'
-  - action: utter_main_menu_eng
-  - intent: select_option
-    entities:
-    - option: provide_info
-  - slot_was_set:
-    - language: '/select_option{"option": "provide_info"}'
-  - slot_was_set:
-    - option: '/select_option{"option": "provide_info"}'
-  - slot_was_set:
-    - choice: '/select_option{"option": "provide_info"}'
-  - action: utter_social_incident_question_eng
-  - intent: oil_spill
-  - slot_was_set:
-    - language: oil spill
-  - slot_was_set:
-    - option: oil spill
-  - slot_was_set:
-    - choice: oil spill
-  - action: utter_guide_oil_spill_eng
-  - action: utter_anything_else_eng
-  - intent: anything_else
-    entities:
-    - choice: no
-  - slot_was_set:
-    - language: '/anything_else{"choice": "no"}'
-  - slot_was_set:
-    - option: '/anything_else{"choice": "no"}'
-  - slot_was_set:
-    - choice: '/anything_else{"choice": "no"}'
-  - action: utter_goodbye_eng
+# - story: greet and choose language english and check info for oil spill
+#   steps:
+#   - intent: greet
+#   - slot_was_set:
+#     - language: hi
+#   - slot_was_set:
+#     - option: hi
+#   - slot_was_set:
+#     - choice: hi
+#   - action: utter_greet
+#   - intent: choose_language
+#     entities:
+#     - language: eng
+#   - slot_was_set:
+#     - language: '/choose_language{"language": "eng"}'
+#   - slot_was_set:
+#     - option: '/choose_language{"language": "eng"}'
+#   - slot_was_set:
+#     - choice: '/choose_language{"language": "eng"}'
+#   - action: utter_main_menu_eng
+#   - intent: select_option
+#     entities:
+#     - option: provide_info
+#   - slot_was_set:
+#     - language: '/select_option{"option": "provide_info"}'
+#   - slot_was_set:
+#     - option: '/select_option{"option": "provide_info"}'
+#   - slot_was_set:
+#     - choice: '/select_option{"option": "provide_info"}'
+#   - action: utter_social_incident_question_eng
+#   - intent: oil_spill
+#   - slot_was_set:
+#     - language: oil spill
+#   - slot_was_set:
+#     - option: oil spill
+#   - slot_was_set:
+#     - choice: oil spill
+#   - action: utter_guide_oil_spill_eng
+#   - action: utter_anything_else_eng
+#   - intent: anything_else
+#     entities:
+#     - choice: no
+#   - slot_was_set:
+#     - language: '/anything_else{"choice": "no"}'
+#   - slot_was_set:
+#     - option: '/anything_else{"choice": "no"}'
+#   - slot_was_set:
+#     - choice: '/anything_else{"choice": "no"}'
+#   - action: utter_goodbye_eng
 
-- story: greet and choose language english and check info for wildlife poaching
-  steps:
-  - slot_was_set:
-    - language: hi
-  - slot_was_set:
-    - option: hi
-  - slot_was_set:
-    - choice: hi
-  - action: utter_greet
-  - intent: choose_language
-    entities:
-    - language: eng
-  - slot_was_set:
-    - language: '/choose_language{"language": "eng"}'
-  - slot_was_set:
-    - option: '/choose_language{"language": "eng"}'
-  - slot_was_set:
-    - choice: '/choose_language{"language": "eng"}'
-  - action: utter_main_menu_eng
-  - intent: select_option
-    entities:
-    - option: provide_info
-  - slot_was_set:
-    - language: '/select_option{"option": "provide_info"}'
-  - slot_was_set:
-    - option: '/select_option{"option": "provide_info"}'
-  - slot_was_set:
-    - choice: '/select_option{"option": "provide_info"}'
-  - action: utter_social_incident_question_eng
-  - intent: wildlife_poaching
-  - slot_was_set:
-    - language: wildlife poaching
-  - slot_was_set:
-    - option: wildlife poaching
-  - slot_was_set:
-    - choice: wildlife poaching
-  - action: utter_guide_wildlife_poaching_eng
-  - action: utter_anything_else_eng
-  - intent: anything_else
-    entities:
-    - choice: no
-  - slot_was_set:
-    - language: '/anything_else{"choice": "no"}'
-  - slot_was_set:
-    - option: '/anything_else{"choice": "no"}'
-  - slot_was_set:
-    - choice: '/anything_else{"choice": "no"}'
-  - action: utter_goodbye_eng
+# - story: greet and choose language english and check info for wildlife poaching
+#   steps:
+#   - slot_was_set:
+#     - language: hi
+#   - slot_was_set:
+#     - option: hi
+#   - slot_was_set:
+#     - choice: hi
+#   - action: utter_greet
+#   - intent: choose_language
+#     entities:
+#     - language: eng
+#   - slot_was_set:
+#     - language: '/choose_language{"language": "eng"}'
+#   - slot_was_set:
+#     - option: '/choose_language{"language": "eng"}'
+#   - slot_was_set:
+#     - choice: '/choose_language{"language": "eng"}'
+#   - action: utter_main_menu_eng
+#   - intent: select_option
+#     entities:
+#     - option: provide_info
+#   - slot_was_set:
+#     - language: '/select_option{"option": "provide_info"}'
+#   - slot_was_set:
+#     - option: '/select_option{"option": "provide_info"}'
+#   - slot_was_set:
+#     - choice: '/select_option{"option": "provide_info"}'
+#   - action: utter_social_incident_question_eng
+#   - intent: wildlife_poaching
+#   - slot_was_set:
+#     - language: wildlife poaching
+#   - slot_was_set:
+#     - option: wildlife poaching
+#   - slot_was_set:
+#     - choice: wildlife poaching
+#   - action: utter_guide_wildlife_poaching_eng
+#   - action: utter_anything_else_eng
+#   - intent: anything_else
+#     entities:
+#     - choice: no
+#   - slot_was_set:
+#     - language: '/anything_else{"choice": "no"}'
+#   - slot_was_set:
+#     - option: '/anything_else{"choice": "no"}'
+#   - slot_was_set:
+#     - choice: '/anything_else{"choice": "no"}'
+#   - action: utter_goodbye_eng
 
-- story: greet and choose language english and check info for pollution and forest fire
-  steps:
-  - intent: greet
-  - slot_was_set:
-    - language: hi
-  - slot_was_set:
-    - option: hi
-  - slot_was_set:
-    - choice: hi
-  - action: utter_greet
-  - intent: choose_language
-    entities:
-    - language: eng
-  - slot_was_set:
-    - language: '/choose_language{"language": "eng"}'
-  - slot_was_set:
-    - option: '/choose_language{"language": "eng"}'
-  - slot_was_set:
-    - choice: '/choose_language{"language": "eng"}'
-  - action: utter_main_menu_eng
-  - intent: select_option
-    entities:
-    - option: provide_info
-  - slot_was_set:
-    - language: '/select_option{"option": "provide_info"}'
-  - slot_was_set:
-    - option: '/select_option{"option": "provide_info"}'
-  - slot_was_set:
-    - choice: '/select_option{"option": "provide_info"}'
-  - action: utter_social_incident_question_eng
-  - intent: pollution
-  - slot_was_set:
-    - language: pollution
-  - slot_was_set:
-    - option: pollution
-  - slot_was_set:
-    - choice: pollution
-  - action: utter_guide_pollution_eng
-  - action: utter_anything_else_eng
-  - intent: anything_else
-    entities:
-    - choice: yes
-  - slot_was_set:
-    - language: '/anything_else{"choice": "yes"}'
-  - slot_was_set:
-    - option: '/anything_else{"choice": "yes"}'
-  - slot_was_set:
-    - choice: '/anything_else{"choice": "yes"}'
-  - action: utter_main_menu_eng
-  - intent: select_option
-    entities:
-    - option: provide_info
-  - slot_was_set:
-    - language: '/select_option{"option": "provide_info"}'
-  - slot_was_set:
-    - option: '/select_option{"option": "provide_info"}'
-  - slot_was_set:
-    - choice: '/select_option{"option": "provide_info"}'
-  - action: utter_social_incident_question_eng
-  - intent: forest_fire
-  - slot_was_set:
-    - language: fire
-  - slot_was_set:
-    - option: fire
-  - slot_was_set:
-    - choice: fire
-  - action: utter_guide_forest_fire_eng
-  - action: utter_anything_else_eng
-  - intent: anything_else
-    entities:
-    - choice: no
-  - slot_was_set:
-    - language: '/anything_else{"choice": "no"}'
-  - slot_was_set:
-    - option: '/anything_else{"choice": "no"}'
-  - slot_was_set:
-    - choice: '/anything_else{"choice": "no"}'
-  - action: utter_goodbye_eng
+# - story: greet and choose language english and check info for pollution and forest fire
+#   steps:
+#   - intent: greet
+#   - slot_was_set:
+#     - language: hi
+#   - slot_was_set:
+#     - option: hi
+#   - slot_was_set:
+#     - choice: hi
+#   - action: utter_greet
+#   - intent: choose_language
+#     entities:
+#     - language: eng
+#   - slot_was_set:
+#     - language: '/choose_language{"language": "eng"}'
+#   - slot_was_set:
+#     - option: '/choose_language{"language": "eng"}'
+#   - slot_was_set:
+#     - choice: '/choose_language{"language": "eng"}'
+#   - action: utter_main_menu_eng
+#   - intent: select_option
+#     entities:
+#     - option: provide_info
+#   - slot_was_set:
+#     - language: '/select_option{"option": "provide_info"}'
+#   - slot_was_set:
+#     - option: '/select_option{"option": "provide_info"}'
+#   - slot_was_set:
+#     - choice: '/select_option{"option": "provide_info"}'
+#   - action: utter_social_incident_question_eng
+#   - intent: pollution
+#   - slot_was_set:
+#     - language: pollution
+#   - slot_was_set:
+#     - option: pollution
+#   - slot_was_set:
+#     - choice: pollution
+#   - action: utter_guide_pollution_eng
+#   - action: utter_anything_else_eng
+#   - intent: anything_else
+#     entities:
+#     - choice: yes
+#   - slot_was_set:
+#     - language: '/anything_else{"choice": "yes"}'
+#   - slot_was_set:
+#     - option: '/anything_else{"choice": "yes"}'
+#   - slot_was_set:
+#     - choice: '/anything_else{"choice": "yes"}'
+#   - action: utter_main_menu_eng
+#   - intent: select_option
+#     entities:
+#     - option: provide_info
+#   - slot_was_set:
+#     - language: '/select_option{"option": "provide_info"}'
+#   - slot_was_set:
+#     - option: '/select_option{"option": "provide_info"}'
+#   - slot_was_set:
+#     - choice: '/select_option{"option": "provide_info"}'
+#   - action: utter_social_incident_question_eng
+#   - intent: forest_fire
+#   - slot_was_set:
+#     - language: fire
+#   - slot_was_set:
+#     - option: fire
+#   - slot_was_set:
+#     - choice: fire
+#   - action: utter_guide_forest_fire_eng
+#   - action: utter_anything_else_eng
+#   - intent: anything_else
+#     entities:
+#     - choice: no
+#   - slot_was_set:
+#     - language: '/anything_else{"choice": "no"}'
+#   - slot_was_set:
+#     - option: '/anything_else{"choice": "no"}'
+#   - slot_was_set:
+#     - choice: '/anything_else{"choice": "no"}'
+#   - action: utter_goodbye_eng
 
-- story: greet and choose language swahili and download app
-  steps:
-  - intent: greet
-  - slot_was_set:
-    - language: hi
-  - slot_was_set:
-    - option: hi
-  - slot_was_set:
-    - choice: hi
-  - action: utter_greet
-  - intent: choose_language
-    entities:
-    - language: sw
-  - slot_was_set:
-    - language: '/choose_language{"language": "sw"}'
-  - slot_was_set:
-    - option: '/choose_language{"language": "sw"}'
-  - slot_was_set:
-    - choice: '/choose_language{"language": "sw"}'
-  - action: utter_main_menu_sw
-  - intent: select_option
-    entities:
-    - option: download_app
-  - slot_was_set:
-    - language: '/select_option{"option": "download_app"}'
-  - slot_was_set:
-    - option: '/select_option{"option": "download_app"}'
-  - slot_was_set:
-    - choice: '/select_option{"option": "download_app"}'
-  - action: utter_download_app_sw
-  - intent: download_app
-    entities:
-    - choice: yes
-  - slot_was_set:
-    - language: '/download_app{"choice": "yes"}'
-  - slot_was_set:
-    - option: '/download_app{"choice": "yes"}'
-  - slot_was_set:
-    - choice: '/download_app{"choice": "yes"}'
-  - action: utter_download_app_steps_sw
-  - action: utter_anything_else_sw
-  - intent: anything_else
-    entities:
-    - choice: no
-  - slot_was_set:
-    - language: '/anything_else{"choice": "no"}'
-  - slot_was_set:
-    - option: '/anything_else{"choice": "no"}'
-  - slot_was_set:
-    - choice: '/anything_else{"choice": "no"}'
-  - action: utter_goodbye_sw
+# - story: greet and choose language swahili and download app
+#   steps:
+#   - intent: greet
+#   - slot_was_set:
+#     - language: hi
+#   - slot_was_set:
+#     - option: hi
+#   - slot_was_set:
+#     - choice: hi
+#   - action: utter_greet
+#   - intent: choose_language
+#     entities:
+#     - language: sw
+#   - slot_was_set:
+#     - language: '/choose_language{"language": "sw"}'
+#   - slot_was_set:
+#     - option: '/choose_language{"language": "sw"}'
+#   - slot_was_set:
+#     - choice: '/choose_language{"language": "sw"}'
+#   - action: utter_main_menu_sw
+#   - intent: select_option
+#     entities:
+#     - option: download_app
+#   - slot_was_set:
+#     - language: '/select_option{"option": "download_app"}'
+#   - slot_was_set:
+#     - option: '/select_option{"option": "download_app"}'
+#   - slot_was_set:
+#     - choice: '/select_option{"option": "download_app"}'
+#   - action: utter_download_app_sw
+#   - intent: download_app
+#     entities:
+#     - choice: yes
+#   - slot_was_set:
+#     - language: '/download_app{"choice": "yes"}'
+#   - slot_was_set:
+#     - option: '/download_app{"choice": "yes"}'
+#   - slot_was_set:
+#     - choice: '/download_app{"choice": "yes"}'
+#   - action: utter_download_app_steps_sw
+#   - action: utter_anything_else_sw
+#   - intent: anything_else
+#     entities:
+#     - choice: no
+#   - slot_was_set:
+#     - language: '/anything_else{"choice": "no"}'
+#   - slot_was_set:
+#     - option: '/anything_else{"choice": "no"}'
+#   - slot_was_set:
+#     - choice: '/anything_else{"choice": "no"}'
+#   - action: utter_goodbye_sw
 
-- story: greet and choose language swahili and check info for climate change and then download app
-  steps:
-  - intent: greet
-  - slot_was_set:
-    - language: hi
-  - slot_was_set:
-    - option: hi
-  - slot_was_set:
-    - choice: hi
-  - action: utter_greet
-  - intent: choose_language
-    entities:
-    - language: sw
-  - slot_was_set:
-    - language: '/choose_language{"language": "sw"}'
-  - slot_was_set:
-    - option: '/choose_language{"language": "sw"}'
-  - slot_was_set:
-    - choice: '/choose_language{"language": "sw"}'
-  - action: utter_main_menu_sw
-  - intent: select_option
-    entities:
-    - option: provide_info
-  - slot_was_set:
-    - language: '/select_option{"option": "provide_info"}'
-  - slot_was_set:
-    - option: '/select_option{"option": "provide_info"}'
-  - slot_was_set:
-    - choice: '/select_option{"option": "provide_info"}'
-  - action: utter_social_incident_question_sw
-  - intent: climate_change
-  - slot_was_set:
-    - language: mabadiliko
-  - slot_was_set:
-    - option: mabadiliko
-  - slot_was_set:
-    - choice: mabadiliko
-  - action: utter_guide_climate_change_sw
-  - action: utter_anything_else_sw
-  - intent: anything_else
-    entities:
-    - choice: yes
-  - slot_was_set:
-    - language: '/anything_else{"choice": "yes"}'
-  - slot_was_set:
-    - option: '/anything_else{"choice": "yes"}'
-  - slot_was_set:
-    - choice: '/anything_else{"choice": "yes"}'
-  - action: utter_main_menu_sw
-  - intent: select_option
-    entities:
-    - option: download_app
-  - slot_was_set:
-    - language: '/select_option{"option": "download_app"}'
-  - slot_was_set:
-    - option: '/select_option{"option": "download_app"}'
-  - slot_was_set:
-    - choice: '/select_option{"option": "download_app"}'
-  - action: utter_download_app_sw
-  - intent: download_app
-    entities:
-    - choice: yes
-  - slot_was_set:
-    - language: '/download_app{"choice": "yes"}'
-  - slot_was_set:
-    - option: '/download_app{"choice": "yes"}'
-  - slot_was_set:
-    - choice: '/download_app{"choice": "yes"}'
-  - action: utter_download_app_steps_sw
-  - action: utter_anything_else_sw
-  - intent: anything_else
-    entities:
-    - choice: no
-  - slot_was_set:
-    - language: '/anything_else{"choice": "no"}'
-  - slot_was_set:
-    - option: '/anything_else{"choice": "no"}'
-  - slot_was_set:
-    - choice: '/anything_else{"choice": "no"}'
-  - action: utter_goodbye_sw
+# - story: greet and choose language swahili and check info for climate change and then download app
+#   steps:
+#   - intent: greet
+#   - slot_was_set:
+#     - language: hi
+#   - slot_was_set:
+#     - option: hi
+#   - slot_was_set:
+#     - choice: hi
+#   - action: utter_greet
+#   - intent: choose_language
+#     entities:
+#     - language: sw
+#   - slot_was_set:
+#     - language: '/choose_language{"language": "sw"}'
+#   - slot_was_set:
+#     - option: '/choose_language{"language": "sw"}'
+#   - slot_was_set:
+#     - choice: '/choose_language{"language": "sw"}'
+#   - action: utter_main_menu_sw
+#   - intent: select_option
+#     entities:
+#     - option: provide_info
+#   - slot_was_set:
+#     - language: '/select_option{"option": "provide_info"}'
+#   - slot_was_set:
+#     - option: '/select_option{"option": "provide_info"}'
+#   - slot_was_set:
+#     - choice: '/select_option{"option": "provide_info"}'
+#   - action: utter_social_incident_question_sw
+#   - intent: climate_change
+#   - slot_was_set:
+#     - language: mabadiliko
+#   - slot_was_set:
+#     - option: mabadiliko
+#   - slot_was_set:
+#     - choice: mabadiliko
+#   - action: utter_guide_climate_change_sw
+#   - action: utter_anything_else_sw
+#   - intent: anything_else
+#     entities:
+#     - choice: yes
+#   - slot_was_set:
+#     - language: '/anything_else{"choice": "yes"}'
+#   - slot_was_set:
+#     - option: '/anything_else{"choice": "yes"}'
+#   - slot_was_set:
+#     - choice: '/anything_else{"choice": "yes"}'
+#   - action: utter_main_menu_sw
+#   - intent: select_option
+#     entities:
+#     - option: download_app
+#   - slot_was_set:
+#     - language: '/select_option{"option": "download_app"}'
+#   - slot_was_set:
+#     - option: '/select_option{"option": "download_app"}'
+#   - slot_was_set:
+#     - choice: '/select_option{"option": "download_app"}'
+#   - action: utter_download_app_sw
+#   - intent: download_app
+#     entities:
+#     - choice: yes
+#   - slot_was_set:
+#     - language: '/download_app{"choice": "yes"}'
+#   - slot_was_set:
+#     - option: '/download_app{"choice": "yes"}'
+#   - slot_was_set:
+#     - choice: '/download_app{"choice": "yes"}'
+#   - action: utter_download_app_steps_sw
+#   - action: utter_anything_else_sw
+#   - intent: anything_else
+#     entities:
+#     - choice: no
+#   - slot_was_set:
+#     - language: '/anything_else{"choice": "no"}'
+#   - slot_was_set:
+#     - option: '/anything_else{"choice": "no"}'
+#   - slot_was_set:
+#     - choice: '/anything_else{"choice": "no"}'
+#   - action: utter_goodbye_sw
 
-- story: greet and choose language swahili and check info for pollution and forest fire incidents
-  steps:
-  - intent: greet
-  - slot_was_set:
-    - language: hi
-  - slot_was_set:
-    - option: hi
-  - slot_was_set:
-    - choice: hi
-  - action: utter_greet
-  - intent: choose_language
-    entities:
-    - language: sw
-  - slot_was_set:
-    - language: '/choose_language{"language": "sw"}'
-  - slot_was_set:
-    - option: '/choose_language{"language": "sw"}'
-  - slot_was_set:
-    - choice: '/choose_language{"language": "sw"}'
-  - action: utter_main_menu_sw
-  - intent: select_option
-    entities:
-    - option: provide_info
-  - slot_was_set:
-    - language: '/select_option{"option": "provide_info"}'
-  - slot_was_set:
-    - option: '/select_option{"option": "provide_info"}'
-  - slot_was_set:
-    - choice: '/select_option{"option": "provide_info"}'
-  - action: utter_social_incident_question_sw
-  - intent: pollution
-  - slot_was_set:
-    - language: uchafuzi
-  - slot_was_set:
-    - option: uchafuzi
-  - slot_was_set:
-    - choice: uchafuzi
-  - action: utter_guide_pollution_sw
-  - action: utter_anything_else_sw
-  - intent: anything_else
-    entities:
-    - choice: yes
-  - slot_was_set:
-    - language: '/anything_else{"choice": "yes"}'
-  - slot_was_set:
-    - option: '/anything_else{"choice": "yes"}'
-  - slot_was_set:
-    - choice: '/anything_else{"choice": "yes"}'
-  - action: utter_main_menu_sw
-  - intent: select_option
-    entities:
-    - option: provide_info
-  - slot_was_set:
-    - language: '/select_option{"option": "provide_info"}'
-  - slot_was_set:
-    - option: '/select_option{"option": "provide_info"}'
-  - slot_was_set:
-    - choice: '/select_option{"option": "provide_info"}'
-  - action: utter_social_incident_question_sw
-  - intent: forest_fire
-  - slot_was_set:
-    - language: moto wa kichaka
-  - slot_was_set:
-    - option: moto wa kichaka
-  - slot_was_set:
-    - choice: moto wa kichaka
-  - action: utter_guide_forest_fire_sw
-  - action: utter_anything_else_sw
-  - intent: anything_else
-    entities:
-    - choice: no
-  - slot_was_set:
-    - language: '/anything_else{"choice": "no"}'
-  - slot_was_set:
-    - option: '/anything_else{"choice": "no"}'
-  - slot_was_set:
-    - choice: '/anything_else{"choice": "no"}'
-  - action: utter_goodbye_sw
+# - story: greet and choose language swahili and check info for pollution and forest fire incidents
+#   steps:
+#   - intent: greet
+#   - slot_was_set:
+#     - language: hi
+#   - slot_was_set:
+#     - option: hi
+#   - slot_was_set:
+#     - choice: hi
+#   - action: utter_greet
+#   - intent: choose_language
+#     entities:
+#     - language: sw
+#   - slot_was_set:
+#     - language: '/choose_language{"language": "sw"}'
+#   - slot_was_set:
+#     - option: '/choose_language{"language": "sw"}'
+#   - slot_was_set:
+#     - choice: '/choose_language{"language": "sw"}'
+#   - action: utter_main_menu_sw
+#   - intent: select_option
+#     entities:
+#     - option: provide_info
+#   - slot_was_set:
+#     - language: '/select_option{"option": "provide_info"}'
+#   - slot_was_set:
+#     - option: '/select_option{"option": "provide_info"}'
+#   - slot_was_set:
+#     - choice: '/select_option{"option": "provide_info"}'
+#   - action: utter_social_incident_question_sw
+#   - intent: pollution
+#   - slot_was_set:
+#     - language: uchafuzi
+#   - slot_was_set:
+#     - option: uchafuzi
+#   - slot_was_set:
+#     - choice: uchafuzi
+#   - action: utter_guide_pollution_sw
+#   - action: utter_anything_else_sw
+#   - intent: anything_else
+#     entities:
+#     - choice: yes
+#   - slot_was_set:
+#     - language: '/anything_else{"choice": "yes"}'
+#   - slot_was_set:
+#     - option: '/anything_else{"choice": "yes"}'
+#   - slot_was_set:
+#     - choice: '/anything_else{"choice": "yes"}'
+#   - action: utter_main_menu_sw
+#   - intent: select_option
+#     entities:
+#     - option: provide_info
+#   - slot_was_set:
+#     - language: '/select_option{"option": "provide_info"}'
+#   - slot_was_set:
+#     - option: '/select_option{"option": "provide_info"}'
+#   - slot_was_set:
+#     - choice: '/select_option{"option": "provide_info"}'
+#   - action: utter_social_incident_question_sw
+#   - intent: forest_fire
+#   - slot_was_set:
+#     - language: moto wa kichaka
+#   - slot_was_set:
+#     - option: moto wa kichaka
+#   - slot_was_set:
+#     - choice: moto wa kichaka
+#   - action: utter_guide_forest_fire_sw
+#   - action: utter_anything_else_sw
+#   - intent: anything_else
+#     entities:
+#     - choice: no
+#   - slot_was_set:
+#     - language: '/anything_else{"choice": "no"}'
+#   - slot_was_set:
+#     - option: '/anything_else{"choice": "no"}'
+#   - slot_was_set:
+#     - choice: '/anything_else{"choice": "no"}'
+#   - action: utter_goodbye_sw

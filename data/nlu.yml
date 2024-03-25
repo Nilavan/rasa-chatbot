@@ -1,108 +1,159 @@
 version: "3.1"
 nlu:
-- intent: greet
+# - intent: greet
+#   examples: |
+#     - hey
+#     - hello
+#     - hi
+#     - hello there
+#     - good morning
+#     - good evening
+#     - moin
+#     - hey there
+#     - let's go
+#     - hey dude
+#     - goodmorning
+#     - goodevening
+#     - good afternoon
+# - intent: goodbye
+#   examples: |
+#     - bye
+#     - goodbye
+#     - thanks
+# - intent: choose_language
+#   examples: |
+#     - language
+#     - show languages
+#     - change language
+#     - english
+#     - swahili
+#     - kikuyu
+# - intent: main_menu
+#   examples: |
+#     - Show main menu
+#     - menu
+# - intent: select_option
+#   examples: |
+#     - download app
+#     - provide info
+#     - stay updated
+#     - get community info
+# - intent: download_app
+#   examples: |
+#     - yes
+#     - no
+# - intent: anything_else
+#   examples: |
+#     - yes
+#     - no
+# - intent: oil_spill
+#   examples: |
+#     - oil spill
+#     - spilled oil
+#     - environmental oil accident
+#     - kumwagika kwa mafuta
+#     - tukio la mafuta kumwagika
+#     - mshuko wa mafuta
+#     - kuringana ria maaku
+#     - kumwagika wa maaku
+#     - kuringana wa maaku
+# - intent: forest_fire
+#   examples: |
+#     - forest fire
+#     - bushfire
+#     - wildfire
+#     - moto wa misitu
+#     - moto wa kichaka
+#     - moto wa mwitu
+#     - moto kichakani
+#     - moto mkubwa wa misitu
+#     - moto wa kichaka kikubwa
+#     - moto wa kichaka kubwa
+#     - fire
+# - intent: pollution
+#   examples: |
+#     - pollution
+#     - environmental pollution
+#     - air pollution
+#     - noise pollution
+#     - uchafuzi wa mazingira
+#     - uchafuzi wa hewa
+#     - uchafuzi wa sauti
+#     - uchafu wa riari
+#     - uchafu wa mazingira
+#     - uchafu wa hewa
+#     - uchafuzi
+# - intent: wildlife_poaching
+#   examples: |
+#     - wildlife poaching
+#     - illegal hunting
+#     - animal trafficking
+#     - ujangili wa wanyamapori
+#     - ujangili wa wanyama
+#     - uwindaji haramu
+#     - ufangiria wa nyamathuri
+#     - ufangiria wa wanyamapori
+#     - uzungu wa nyama
+# - intent: climate_change
+#   examples: |
+#     - climate change
+#     - global warming
+#     - greenhouse effect
+#     - mabadiliko ya hali ya hewa
+#     - ongezeko la joto duniani
+#     - athari ya kijani
+#     - mbarura ya uhenia
+#     - ongezeko la joto
+#     - athari ya joto
+#     - mabadiliko
+- intent: fake_news
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-- intent: goodbye
+    - What are some signs of fake news?
+    - How can I identify fake news?
+    - Can you give tips to spot fake news?
+    - Is this news article reliable or fake?
+    - What should I do if I come across fake news?
+    - Ni zipi dalili za habari za uongo?
+    - Nifanyeje kutambua habari za uongo?
+    - Unaweza kunipa vidokezo vya kutambua habari za uongo?
+    - Je, hii makala ya habari ni ya kuaminika au ya uongo?
+    - Nifanye nini nikikutana na habari za uongo?
+    - Guciarĩera kuruta ciana mũgũnda-ini wa nyoko?
+    - Mũthamaki no kanua nyoko mũgũnda-ini?
+    - Nĩgacokia rũhĩri rwa kuhĩthĩkio nyoko mũgũnda-ini?
+    - Rĩrĩ nĩkaahanda ũhoro rwa kuhĩthĩkio nyoko mũgũnda-ini?
+    - Rĩrĩ ũrĩa ũtari ũrĩa atĩa nĩ wa kuugĩte-ini ciana mũgũnda-ini?
+- intent: social_media_rumours
   examples: |
-    - bye
-    - goodbye
-    - thanks
-- intent: choose_language
+    - How can I deal with social media rumors?
+    - What are the consequences of spreading social media rumors?
+    - Can you provide strategies to avoid believing social media rumors?
+    - What steps can I take to verify information on social media?
+    - Should I forward social media rumors to my friends?
+    - Nifanyeje kukabiliana na uvumi wa mitandao ya kijamii?
+    - Ni athari zipi za kueneza uvumi wa mitandao ya kijamii?
+    - Unaweza kutoa mikakati ya kuepuka kuamini uvumi wa mitandao ya kijamii?
+    - Ni hatua gani naweza kuchukua kuthibitisha habari kwenye mitandao ya kijamii?
+    - Je, nifanyeje kutuma uvumi wa mitandao ya kijamii kwa marafiki zangu?
+    - Ciigacania ũmwarĩĩ wa miĩrĩ wa kwĩrĩtana na tũgĩka tũũrĩ wa ciana mũgũnda-ini wa gutũrĩka?
+    - Nĩ athuri ahandũ a kwĩrĩtana ũmwarĩĩ wa miĩrĩ wa mitandao ya kijamii?
+    - Unaweza kũngĩrĩra mĩkakati ya kuongerera aha kũhoĩtha kũramũĩra ũmwarĩĩ wa miĩrĩ wa mitandao ya kijamii?
+    - Ni hari tũmanĩ kũona ĩbũrũ ya kũhĩthĩkio ta matuuga-ini kwa mitandao ya kijamii?
+    - Ũhoro ũrĩa ũtari ũrĩa atĩa ũndũ wa mũtumĩria miĩrĩ wa mitandao ya kijamii tũgĩka atuma kũrĩa maratũga-ini wake?
+- intent: online_conspiracy_theories
   examples: |
-    - language
-    - show languages
-    - change language
-    - english
-    - swahili
-    - kikuyu
-- intent: main_menu
-  examples: |
-    - Show main menu
-    - menu
-- intent: select_option
-  examples: |
-    - download app
-    - provide info
-    - stay updated
-    - get community info
-- intent: download_app
-  examples: |
-    - yes
-    - no
-- intent: anything_else
-  examples: |
-    - yes
-    - no
-- intent: oil_spill
-  examples: |
-    - oil spill
-    - spilled oil
-    - environmental oil accident
-    - kumwagika kwa mafuta
-    - tukio la mafuta kumwagika
-    - mshuko wa mafuta
-    - kuringana ria maaku
-    - kumwagika wa maaku
-    - kuringana wa maaku
-- intent: forest_fire
-  examples: |
-    - forest fire
-    - bushfire
-    - wildfire
-    - moto wa misitu
-    - moto wa kichaka
-    - moto wa mwitu
-    - moto kichakani
-    - moto mkubwa wa misitu
-    - moto wa kichaka kikubwa
-    - moto wa kichaka kubwa
-    - fire
-- intent: pollution
-  examples: |
-    - pollution
-    - environmental pollution
-    - air pollution
-    - noise pollution
-    - uchafuzi wa mazingira
-    - uchafuzi wa hewa
-    - uchafuzi wa sauti
-    - uchafu wa riari
-    - uchafu wa mazingira
-    - uchafu wa hewa
-    - uchafuzi
-- intent: wildlife_poaching
-  examples: |
-    - wildlife poaching
-    - illegal hunting
-    - animal trafficking
-    - ujangili wa wanyamapori
-    - ujangili wa wanyama
-    - uwindaji haramu
-    - ufangiria wa nyamathuri
-    - ufangiria wa wanyamapori
-    - uzungu wa nyama
-- intent: climate_change
-  examples: |
-    - climate change
-    - global warming
-    - greenhouse effect
-    - mabadiliko ya hali ya hewa
-    - ongezeko la joto duniani
-    - athari ya kijani
-    - mbarura ya uhenia
-    - ongezeko la joto
-    - athari ya joto
-    - mabadiliko
+    - What are some common online conspiracy theories?
+    - How do online conspiracy theories influence society?
+    - Can you debunk this online conspiracy theory?
+    - Are there any reliable sources to counter online conspiracy theories?
+    - Why do people believe in online conspiracy theories?
+    - Ni zipi nadharia za njama mtandaoni za kawaida?
+    - Jinsi gani nadharia za njama mtandaoni zinavyoathiri jamii?
+    - Unaweza kubainisha hii nadharia ya njama mtandaoni?
+    - Je, kuna vyanzo vyovyote vya kuaminika vya kukabiliana na nadharia za njama mtandaoni?
+    - Kwa nini watu huamini katika nadharia za njama mtandaoni?
+    - Nĩ ũrĩa ũtari ũrĩa atĩa ũrĩa wa mũtumĩria nda-ini nĩ njama-ini wa miĩrĩ cia kawaida?
+    - Mũthonithanie ũrĩa njama-ini wa miĩrĩ cia njama cia nda-ini mũhũĩ wĩrĩ?
+    - Unaweza kuhenĩka njama cia njama-ini wa miĩrĩ cia nda-ini hii?
+    - Ĩhoro ciigacania nyenjĩ kũmbahokia njama-ini wa miĩrĩ cia nda-ini wĩrĩ?
+    - Kĩnũ kũmenya atĩa tũmanĩ kũmũhoya mũtũke mũno-ini? 
