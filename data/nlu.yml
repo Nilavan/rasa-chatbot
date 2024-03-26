@@ -1,159 +1,359 @@
 version: "3.1"
 nlu:
-# - intent: greet
-#   examples: |
-#     - hey
-#     - hello
-#     - hi
-#     - hello there
-#     - good morning
-#     - good evening
-#     - moin
-#     - hey there
-#     - let's go
-#     - hey dude
-#     - goodmorning
-#     - goodevening
-#     - good afternoon
-# - intent: goodbye
-#   examples: |
-#     - bye
-#     - goodbye
-#     - thanks
-# - intent: choose_language
-#   examples: |
-#     - language
-#     - show languages
-#     - change language
-#     - english
-#     - swahili
-#     - kikuyu
-# - intent: main_menu
-#   examples: |
-#     - Show main menu
-#     - menu
-# - intent: select_option
-#   examples: |
-#     - download app
-#     - provide info
-#     - stay updated
-#     - get community info
-# - intent: download_app
-#   examples: |
-#     - yes
-#     - no
-# - intent: anything_else
-#   examples: |
-#     - yes
-#     - no
-# - intent: oil_spill
-#   examples: |
-#     - oil spill
-#     - spilled oil
-#     - environmental oil accident
-#     - kumwagika kwa mafuta
-#     - tukio la mafuta kumwagika
-#     - mshuko wa mafuta
-#     - kuringana ria maaku
-#     - kumwagika wa maaku
-#     - kuringana wa maaku
-# - intent: forest_fire
-#   examples: |
-#     - forest fire
-#     - bushfire
-#     - wildfire
-#     - moto wa misitu
-#     - moto wa kichaka
-#     - moto wa mwitu
-#     - moto kichakani
-#     - moto mkubwa wa misitu
-#     - moto wa kichaka kikubwa
-#     - moto wa kichaka kubwa
-#     - fire
-# - intent: pollution
-#   examples: |
-#     - pollution
-#     - environmental pollution
-#     - air pollution
-#     - noise pollution
-#     - uchafuzi wa mazingira
-#     - uchafuzi wa hewa
-#     - uchafuzi wa sauti
-#     - uchafu wa riari
-#     - uchafu wa mazingira
-#     - uchafu wa hewa
-#     - uchafuzi
-# - intent: wildlife_poaching
-#   examples: |
-#     - wildlife poaching
-#     - illegal hunting
-#     - animal trafficking
-#     - ujangili wa wanyamapori
-#     - ujangili wa wanyama
-#     - uwindaji haramu
-#     - ufangiria wa nyamathuri
-#     - ufangiria wa wanyamapori
-#     - uzungu wa nyama
-# - intent: climate_change
-#   examples: |
-#     - climate change
-#     - global warming
-#     - greenhouse effect
-#     - mabadiliko ya hali ya hewa
-#     - ongezeko la joto duniani
-#     - athari ya kijani
-#     - mbarura ya uhenia
-#     - ongezeko la joto
-#     - athari ya joto
-#     - mabadiliko
-- intent: fake_news
+- intent: Cutting_Trees
   examples: |
-    - What are some signs of fake news?
-    - How can I identify fake news?
-    - Can you give tips to spot fake news?
-    - Is this news article reliable or fake?
-    - What should I do if I come across fake news?
-    - Ni zipi dalili za habari za uongo?
-    - Nifanyeje kutambua habari za uongo?
-    - Unaweza kunipa vidokezo vya kutambua habari za uongo?
-    - Je, hii makala ya habari ni ya kuaminika au ya uongo?
-    - Nifanye nini nikikutana na habari za uongo?
-    - Guciarĩera kuruta ciana mũgũnda-ini wa nyoko?
-    - Mũthamaki no kanua nyoko mũgũnda-ini?
-    - Nĩgacokia rũhĩri rwa kuhĩthĩkio nyoko mũgũnda-ini?
-    - Rĩrĩ nĩkaahanda ũhoro rwa kuhĩthĩkio nyoko mũgũnda-ini?
-    - Rĩrĩ ũrĩa ũtari ũrĩa atĩa nĩ wa kuugĩte-ini ciana mũgũnda-ini?
-- intent: social_media_rumours
+    - Illegal logging is happening in the forest.
+    - People are cutting down trees without permission.
+    - Deforestation is a serious problem in our area.
+    - Ukatili wa miti unaendelea msituni.
+    - Watu wanakata miti bila ruhusa.
+    - Ukataji miti kiholela ni tatizo kubwa katika eneo letu.
+    - Ukataji wa mũrĩithi unaendereka kĩrĩa.
+    - Ûherereire wa mũthûngû mũmĩrĩĩcĩ.
+    - Mũthûngû wa kũhagûria mũthûngû kĩhaû kĩrĩa.
+
+- intent: Garbage_pile_up
   examples: |
-    - How can I deal with social media rumors?
-    - What are the consequences of spreading social media rumors?
-    - Can you provide strategies to avoid believing social media rumors?
-    - What steps can I take to verify information on social media?
-    - Should I forward social media rumors to my friends?
-    - Nifanyeje kukabiliana na uvumi wa mitandao ya kijamii?
-    - Ni athari zipi za kueneza uvumi wa mitandao ya kijamii?
-    - Unaweza kutoa mikakati ya kuepuka kuamini uvumi wa mitandao ya kijamii?
-    - Ni hatua gani naweza kuchukua kuthibitisha habari kwenye mitandao ya kijamii?
-    - Je, nifanyeje kutuma uvumi wa mitandao ya kijamii kwa marafiki zangu?
-    - Ciigacania ũmwarĩĩ wa miĩrĩ wa kwĩrĩtana na tũgĩka tũũrĩ wa ciana mũgũnda-ini wa gutũrĩka?
-    - Nĩ athuri ahandũ a kwĩrĩtana ũmwarĩĩ wa miĩrĩ wa mitandao ya kijamii?
-    - Unaweza kũngĩrĩra mĩkakati ya kuongerera aha kũhoĩtha kũramũĩra ũmwarĩĩ wa miĩrĩ wa mitandao ya kijamii?
-    - Ni hari tũmanĩ kũona ĩbũrũ ya kũhĩthĩkio ta matuuga-ini kwa mitandao ya kijamii?
-    - Ũhoro ũrĩa ũtari ũrĩa atĩa ũndũ wa mũtumĩria miĩrĩ wa mitandao ya kijamii tũgĩka atuma kũrĩa maratũga-ini wake?
-- intent: online_conspiracy_theories
+    - There is a huge pile of garbage on the roadside.
+    - Garbage is accumulating near the riverbank.
+    - Littering has become a common issue in our neighborhood.
+    - Kuna kifurushi kikubwa cha taka kando ya barabara.
+    - Takataka zinaendelea kujaa karibu na kingo za mto.
+    - Kuchafua mazingira kwa kutupa taka ovyo imekuwa tatizo kawaida katika eneo letu.
+    - Mũrũngũ wa mbarĩ otho mũtũru wa gĩcũmba.
+    - Mbarũũ ya taka inandĩkĩrĩrĩrĩra arĩa mũciĩĩ wa mũto.
+    - Ûwîharagwo wa kũhĩgera mũndũ wa gũtũkũra taka nĩ rũtũgũ.
+  
+- intent: Potholes
   examples: |
-    - What are some common online conspiracy theories?
-    - How do online conspiracy theories influence society?
-    - Can you debunk this online conspiracy theory?
-    - Are there any reliable sources to counter online conspiracy theories?
-    - Why do people believe in online conspiracy theories?
-    - Ni zipi nadharia za njama mtandaoni za kawaida?
-    - Jinsi gani nadharia za njama mtandaoni zinavyoathiri jamii?
-    - Unaweza kubainisha hii nadharia ya njama mtandaoni?
-    - Je, kuna vyanzo vyovyote vya kuaminika vya kukabiliana na nadharia za njama mtandaoni?
-    - Kwa nini watu huamini katika nadharia za njama mtandaoni?
-    - Nĩ ũrĩa ũtari ũrĩa atĩa ũrĩa wa mũtumĩria nda-ini nĩ njama-ini wa miĩrĩ cia kawaida?
-    - Mũthonithanie ũrĩa njama-ini wa miĩrĩ cia njama cia nda-ini mũhũĩ wĩrĩ?
-    - Unaweza kuhenĩka njama cia njama-ini wa miĩrĩ cia nda-ini hii?
-    - Ĩhoro ciigacania nyenjĩ kũmbahokia njama-ini wa miĩrĩ cia nda-ini wĩrĩ?
-    - Kĩnũ kũmenya atĩa tũmanĩ kũmũhoya mũtũke mũno-ini? 
+    - The road is full of potholes, making it difficult to drive.
+    - Potholes are causing damage to vehicles.
+    - The municipality needs to fix the potholes on this street.
+    - Barabara imejaa mashimo, ikifanya kuendesha gari kuwa ngumu.
+    - Mashimo yanayasababisha magari kuharibika.
+    - Halmashauri inahitaji kurekebisha mashimo kwenye barabara hii.
+    - Rũci irĩa kĩgũthĩa ĩkĩrĩa mĩgongo mũrĩĩ.
+    - Mĩgongo mũriĩ ĩtĩma ĩtarĩa kũhĩgũa mĩthĩĩ.
+    - Mûcîrî o tĩîrĩire kũhĩmerera mĩgongo mũriĩ kĩrĩa.
+
+- intent: Hanging_Power_Lines
+  examples: |
+    - The power lines are hanging dangerously low.
+    - Dangling electric cables pose a risk to pedestrians.
+    - The hanging power lines need urgent attention from the authorities.
+    - Waya za umeme zimeviringia chini kwa hatari.
+    - Nyaya za umeme zinazoning'inia zinatishia watembea kwa miguu.
+    - Waya za umeme zinazotia hatarini zinahitaji kuchukuliwa hatua haraka na mamlaka.
+    - Rûgûrû wa mûcemanagia rûgûrû inîmo nûkûkû
+    - Ûhûkûkû wa rûgûrû wa mûcemanagia ũîkûwa ûmûhîî nîrî
+    - Ûrûgûrû wa mûcemanagia rûgûrû ũtugûthû kûrîanîta na thî mûhîî kîrîa.
+
+- intent: Open_sewer
+  examples: |
+    - There is an open sewer releasing foul odors.
+    - The open sewer poses a health risk to residents.
+    - We need to report the open sewer to the authorities.
+    - Kuna mtaro wazi unaotoa harufu mbaya.
+    - Mtaro wazi unatishia afya ya wakazi.
+    - Tunahitaji kuripoti mtaro wazi kwa mamlaka husika.
+    - Mûbara ũgûkû ũgûkûha niûkû
+    - Ûmûbara ũgûkû ũrîa ũîkûra mûrîa wîîrîko
+    - Tûhîka kûrîpôtî mûbara ũgûkû kûrîa ûmûhîî mûîtî
+
+- intent: Industrial_pollution
+  examples: |
+    - Factories in the area are causing industrial pollution.
+    - Industrial pollution is contaminating the air and water.
+    - We need stricter regulations to control industrial pollution.
+    - Viwanda katika eneo hili vinachafua mazingira.
+    - Uchafuzi wa viwandani unachafua hewa na maji.
+    - Tunahitaji sheria kali za kudhibiti uchafuzi wa viwandani.
+    - Thînaga-inĩ ma kîrĩî mũrĩĩcĩ mũkîmûîcĩa mũthai ĩnyû
+    - Ûchafûzi wa ma kîrĩî ũrîa ũndûûkio na mîûrûĩĩ
+    - Ûîkû mûhûrû wa cũrû wa thînaga-inĩ ûrîa ûmbûkûrîa ûchafûzi wa ma kîrĩî
+
+- intent: Illegal_dumping
+  examples: |
+    - People are illegally dumping waste in the river.
+    - Illegal dumping of construction debris is polluting the environment.
+    - We need to take action against those involved in illegal dumping.
+    - Watu wanatupa taka ovyo kinyume cha sheria katika mto.
+    - Kutupa taka za ujenzi kiholela kunachafua mazingira.
+    - Tunahitaji kuchukua hatua dhidi ya wanaohusika na kutupa taka ovyo.
+    - Mûndû mûrĩ naîkûra taka ûkîhûtîa îngîîcĩ mũto.
+    - Ûkûtûgûra taka rĩanî ũrîa ûîndûûkio mûhûrû wa cũrû.
+    - Tûhîka ûkûhûmbûra ûthĩî îndûûrîra ûrîa ûkûtûgûra taka rĩanî
+
+- intent: Transformer_damage 
+  examples: |
+    - The transformer in our neighborhood has exploded.
+    - There was a power outage due to a transformer malfunction.
+    - We urgently need a new transformer to restore electricity.
+    - Transformer katika mtaa wetu imepasuka.
+    - Kulikuwa na kukatika kwa umeme kutokana na hitilafu ya transformer.
+    - Tunahitaji haraka transformer mpya kurejesha umeme.
+    - Ûcemanagia ĩî mũrĩĩ ũguûcana na rũgũrũ.
+    - Îci îkĩmũrĩa nî gĩthima rũgũrũ rûtukûa cemanagia
+    - Tûhûîîra rũgũrũ mũcemanagia mũthînî kûhûraga cemanagia
+
+- intent: Swollen_River
+  examples: |
+    - The recent heavy rain has caused the river to swell.
+    - The swollen river is at risk of overflowing its banks.
+    - We need to alert residents about the swollen river.
+    - Mvua kubwa za hivi karibuni zimesababisha mto kufurika.
+    - Mto uliofurika unahatarisha kufurika kwa benki zake.
+    - Tunahitaji kuwaonya wakazi kuhusu mto uliofurika.
+    - Mûcūthikia ûmûcana mûkûnyekeha cĩcũma cĩa rũgũrũ
+    - Ûrũgũrũ ũcũthĩkĩa waîga mũnjorokera gĩcũcĩcĩa
+    - Tûkûhûrĩa mũrĩĩtwa kũhûraga wîîrîko wîa rũgũrũ
+
+- intent: Broken_Bridge
+  examples: |
+    - The bridge collapsed due to heavy flooding.
+    - The broken bridge has caused traffic chaos in the area.
+    - Authorities need to repair the broken bridge urgently.
+    - Daraja limeanguka kutokana na mafuriko makubwa.
+    - Daraja lililovunjika limeleta fujo ya trafiki katika eneo hilo.
+    - Mamlaka wanahitaji kurekebisha daraja lililovunjika kwa haraka.
+    - Rũrĩa rũthĩo rûcĩthĩkĩra nî rũgũrũ gîkûnyĩrĩria
+    - Rũrĩa rũcĩthĩkĩa rûhũria gîacĩkĩria mũthai gĩcĩmũ.
+    - Îngîkîmĩkaî tûhûîra rũrĩa rũcĩthĩkĩa rũhũrĩka mûndûga rûcĩthĩkĩra
+
+- intent: Fire
+  examples: |
+    - There is a fire outbreak in the forest.
+    - The fire has spread rapidly due to strong winds.
+    - Firefighters are working to extinguish the blaze.
+    - Kuna mlipuko wa moto katika msitu.
+    - Moto umesambaa kwa haraka kutokana na upepo mkali.
+    - Wazima moto wanafanya kazi ya kuzima moto huo.
+    - Ûkûmûîkana njîra kûgîcîta mwega mûthĩ mûrîa mûthi
+    - Mûthĩ ũmûîkana ûcîî kûmûrîa îrîa mûrĩa
+    - Mûcemanagia wa mûgîra waîkûa mwega kûrîîka mûthi
+
+- intent: Unsafe_working_conditions
+  examples: |
+    - Workers are exposed to unsafe working conditions.
+    - Unsafe working conditions pose a risk to employee health.
+    - Employers need to improve safety measures in the workplace.
+    - Wafanyakazi wanakabiliwa na mazingira hatarishi kazini.
+    - Mazingira hatarishi kazini yanahatarisha afya ya wafanyakazi.
+    - Waajiri wanahitaji kuboresha hatua za usalama kazini.
+    - Wîthekane wa ûkûmûîkîra ûkûîria cûra
+    - Ûkûmûîkana ûkûmûîkana cîcîa ûmwîmû
+    - Ûtûkarîa ûmwîmû kûhûraga ûcîtho wa ûthîhîria ûmûhûrû
+
+- intent: Flooding
+  examples: |
+    - Heavy rains have caused flooding in low-lying areas.
+    - Flooding has led to road closures and property damage.
+    - Residents need to evacuate areas prone to flooding.
+    - Mvua kubwa zimesababisha mafuriko katika maeneo ya chini.
+    - Mafuriko yamesababisha kufungwa kwa barabara na uharibifu wa mali.
+    - Wakazi wanahitaji kuhamia maeneo yasiyoathirika na mafuriko.
+    - Ûcũgĩa maî mûngûkûria cĩmûîte
+    - Ûcũgĩa mûngûkûria ûmbûkûria kûyûkûrûra gĩcûcĩa na îhûrûra
+    - Maitumere mûrĩa thîîra cĩgûkûrĩra mûthai wîa mûngûkûria
+
+- intent: Crop_disease
+  examples: |
+    - The crops are showing signs of disease.
+    - Farmers need assistance in identifying crop diseases.
+    - Crop disease can significantly affect agricultural productivity.
+    - Mazao yanaonyesha dalili za magonjwa.
+    - Wakulima wanahitaji msaada katika kutambua magonjwa ya mazao.
+    - Magonjwa ya mazao yanaweza kuathiri sana uzalishaji wa kilimo.
+    - Ûkûhaîma kûraûkûa ûndîrî mûhûka
+    - Ûkûhaîma kûraûkûa ûtûkarîa ûnjîîcîa ûndîrî mûhûka
+    - Ûnjîîcîa ûndîrî mûhûka ûgûkûrîa mûthai wîa njîîcîa
+
+- intent: Dirty_Water
+  examples: |
+    - The water in the river appears to be dirty.
+    - Residents are concerned about the quality of drinking water.
+    - Pollution is causing water sources to become contaminated.
+    - Maji katika mto yanaonekana kuwa machafu.
+    - Wakazi wanahangaika kuhusu ubora wa maji ya kunywa.
+    - Uchafuzi unafanya vyanzo vya maji viwe machafu.
+    - Îtharîrîa mûcana wîa îgûîo naî njîrîa
+    - Ûrîkûrîa ûmûkûra ûnjîrîa mûhûka wa kûrîkûrîa
+    - Ûndûîra mûcana wîa njîrîa îgûîo njîrîa ûtûkîa
+
+- intent: Open_Quarry
+  examples: |
+    - There is an open quarry near the residential area.
+    - Residents are concerned about safety hazards posed by the open quarry.
+    - Authorities need to take action to secure the open quarry.
+    - Kuna karri ya wazi karibu na eneo la makazi.
+    - Wakazi wanahangaika kuhusu hatari za usalama zinazosababishwa na karri ya wazi.
+    - Mamlaka zinahitaji kuchukua hatua kuhakikisha karri ya wazi inalindwa.
+    - Ûkûkûûrîa njîrîa ûngîka mûrîa mûrîa
+    - Ûrîkûûrîa mûcana wîa îngîkîmĩkaî kûhûrĩrĩra njîrîa ûngîka mûrîa
+    - Îthamîtho îthûnge îngîkîmĩkaî kûhûrĩrĩra njîrîa ûngîka mûrîa
+
+- intent: Soil_Erosion
+  examples: |
+    - Soil erosion is becoming a problem in agricultural areas.
+    - Farmers need to implement soil conservation measures.
+    - Deforestation contributes to soil erosion.
+    - Erosioni ya udongo inazidi kuwa tatizo katika maeneo ya kilimo.
+    - Wakulima wanahitaji kutekeleza hatua za uhifadhi wa udongo.
+    - Uteketezaji wa misitu unachangia kwa uharibifu wa udongo.
+    - Ûkûhûgûria rûgûra wîa ûtûkûrîa
+    - Ûkûkarîra njîrîa kîhûgûrîa rûgûra
+    - Îûkûîthamîthîra gĩcînja gîa rûgûra wîa ûtûkûrîa
+
+- intent: Falling_Guard_Rail
+  examples: |
+    - The guard rail along the road is falling apart.
+    - Falling guard rails pose a danger to motorists.
+    - Authorities should repair the falling guard rail immediately.
+    - Barabara ya kingo ya barabara inavunjika.
+    - Kinga ya kuingia kwa njia ya anga inaleta hatari kwa madereva.
+    - Mamlaka zinapaswa kurekebisha kinga inayovunjika mara moja.
+    - Ûkûmba rîrîa wîa mũthai cĩî
+    - Ûkûkĩmba kûgîcîna wîa mũthai cĩî mwenda mũthâî
+    - Îthamîtho kûrîkûrîra rîrîa wîa mũthai cĩî mwenda mũthâî
+
+- intent: Unsafe_side_walk
+  examples: |
+    - The sidewalk is uneven and poses a risk of tripping.
+    - Pedestrians feel unsafe walking on the sidewalk due to its poor condition.
+    - Authorities need to repair the unsafe sidewalk to ensure pedestrian safety.
+    - Kibarabara kimepinda na kinaleta hatari ya kuanguka.
+    - Wapita njia wanahisi wasio salama kutembea kwenye kibarabara kutokana na hali mbaya.
+    - Mamlaka zinahitaji kurekebisha kibarabara kisicho salama ili kuhakikisha usalama wa wapita njia.
+    - Îtûî kûngîka wîa mûrîmû
+    - Wûngîkîria njîhûrû wîa mûrîmû gîtûngo
+    - Îthamîtho îthûnge îûkûkûîra wîa mûrîmû gîtûngo
+
+- intent: Open_drain
+  examples: |
+    - There is an open drain along the road that needs to be covered.
+    - Open drains are a breeding ground for mosquitoes and pose health risks.
+    - The local council should take action to close the open drain.
+    - Kuna mtaro wazi kando ya barabara ambao unahitaji kufunikwa.
+    - Mataro wazi ni mazalia ya mbu na yanaweza kuleta hatari kwa afya.
+    - Baraza la eneo linapaswa kuchukua hatua ya kufunga mtaro wazi.
+    - Îtûî kûngîka wîa mûrîmû
+    - Wûngîkîria njîhûrû wîa mûrîmû gîtûngo
+    - Îthamîtho îthûnge îûkûkûîra wîa mûrîmû gîtûngo
+
+- intent: Fallen_tree
+  examples: |
+    - A tree has fallen across the road, blocking traffic.
+    - Fallen trees can damage property and obstruct roads.
+    - The forestry department should remove the fallen tree to clear the road.
+    - Mti umenguwa kando ya barabara, ukizuia trafiki.
+    - Mitishamba inaweza kusababisha uharibifu wa mali na kuzuia barabara.
+    - Idara ya misitu inapaswa kuondoa mti uliouanguka ili kusafisha barabara.
+    - Îtûî kûngîka wîa mûrîmû
+    - Wûngîkîria njîhûrû wîa mûrîmû gîtûngo
+    - Îthamîtho îthûnge îûkûkûîra wîa mûrîmû gîtûngo
+
+- intent: Afforestation
+  examples: |
+    - Afforestation projects are essential for restoring depleted forests.
+    - Planting trees is crucial to combatting deforestation.
+    - The government should allocate funds for afforestation initiatives.
+    - Miradi ya upandaji miti ni muhimu kwa kurejesha misitu iliyoharibika.
+    - Upandaji miti ni muhimu katika kupambana na uharibifu wa misitu.
+    - Serikali inapaswa kutenga fedha kwa miradi ya upandaji miti.
+    - Îtûî kûngîka wîa mûrîmû
+    - Wûngîkîria njîhûrû wîa mûrîmû gîtûngo
+    - Îthamîtho îthûnge îûkûkûîra wîa mûrîmû gîtûngo
+
+- intent: Safe_Bridge
+  examples: |
+    - The new bridge is sturdy and safe for vehicles and pedestrians.
+    - Safe bridges are essential for smooth transportation and public safety.
+    - Engineers ensured that the bridge meets safety standards before opening it to the public.
+    - Daraja jipya ni imara na salama kwa magari na wapita njia.
+    - Madaraja salama ni muhimu kwa usafiri wa laini na usalama wa umma.
+    - Wahandisi walihakikisha kuwa daraja linakidhi viwango vya usalama kabla ya kulifungua kwa umma.
+    - Îtûî kûngîka wîa mûrîmû
+    - Wûngîkîria njîhûrû wîa mûrîmû gîtûngo
+    - Îthamîtho îthûnge îûkûkûîra wîa mûrîmû gîtûngo
+
+- intent: Bounty_harvest
+  examples: |
+    - The farmers celebrated a bounty harvest this season.
+    - We had a bounty harvest of apples in the orchard.
+    - The community organized a festival to mark the bounty harvest.
+    - Wakulima walisherehekea mavuno mazuri msimu huu.
+    - Tulikuwa na mavuno mengi ya matunda ya msimu katika bustani.
+    - Jamii ilipanga tamasha kwa ajili ya kusherehekea mavuno mazuri.
+    - Mûtigî mûngîkûû wa mûrâtûka ûngîa
+    - Ûngîagîrîra îkûû mûkûrû wa mûrâtûka
+    - Wîgîrîrwo mûkûrû wa mûrâtûka
+
+- intent: Overgrown_bushes
+  examples: |
+    - The neglected property had overgrown bushes surrounding it.
+    - Overgrown bushes can provide hiding places for pests and animals.
+    - The municipality should trim the overgrown bushes along the roadside.
+    - Mali ambayo haikujaliwa ilikuwa na vichaka vilivyokua vibaya vikimzingira.
+    - Vichaka vilivyokua vibaya vinaweza kutoa sehemu za kujificha kwa wadudu na wanyama.
+    - Halmashauri inapaswa kukata vichaka vilivyokua vibaya kando ya barabara.
+    - Îthungû-mbeere mwîro mûthi ûngîkûûa.
+    - Mûthi mwîro ûngîkûûa wîa mûrîmû gîtûngo
+    - Bââra ya mîthi mûhoya kûrîgûîra mûthi mwîro ûngîkûûa
+
+- intent: Wildlife_invasion
+  examples: |
+    - The national park experienced a wildlife invasion due to deforestation nearby.
+    - Wildlife invasion can disrupt ecosystems and endanger local species.
+    - Conservation efforts are needed to prevent further wildlife invasion.
+    - Hifadhi ya taifa ilikumbwa na uvamizi wa wanyama pori kutokana na ukataji miti karibu.
+    - Uvamizi wa wanyama pori unaweza kuvuruga mifumo ya ikolojia na kuhatarisha spishi za eneo.
+    - Jũguo cia mûthi wîa nîkûrûa ûmeûgûîra kûrîgûîra ûngîkûûa wa mîthi
+    - Îthamîtho îthûnge îûkûkûîra wîa mûrîmû gîtûngo
+    - Guoko wîa mûthi wîa kûrîgûîra kûrîkûîa wîa îkînû ûndere ûngîkûûa wa mîthi
+
+- intent: Air_pollution
+  examples: |
+    - Air pollution from factories has worsened in the city.
+    - Air pollution levels are highest during rush hour traffic.
+    - Measures should be taken to reduce air pollution and improve air quality.
+    - Uchafuzi wa hewa kutoka viwandani umezidi kuwa mbaya katika jiji.
+    - Viwango vya uchafuzi wa hewa ni vya juu wakati wa msongamano wa trafiki.
+    - Hatua zinapaswa kuchukuliwa ili kupunguza uchafuzi wa hewa na kuboresha ubora wa hewa.
+    - Ûkûgûîra ûthîngo wa ûngûkûûa wa mûrîmû gîtûngo
+    - Njîrî ya ûngûkûûa wa mûrîmû gîtûngo inîya wîmû
+    - Ûgûtûra tûûrû kûûkûîra ûngûkûûa wa mûrîmû gîtûngo na kûgîrîra ûkûkûûrîra wa ûndû wa mûrîmû gîtûngo
+
+- intent: Water_pollution
+  examples: |
+    - Water pollution in the river is threatening aquatic life.
+    - Industrial waste is a major cause of water pollution in the area.
+    - Efforts should be made to reduce water pollution and protect water sources.
+    - Uchafuzi wa maji katika mto unatishia maisha ya viumbe majini.
+    - Taka za viwandani ni sababu kuu ya uchafuzi wa maji katika eneo hilo.
+    - Jũguo cia gîkenie ûkûngîkîra kûrîgûîra ûngîkûûa wa ûthîngo wa ûngûkûûa
+    - Njîrî ya ûngûkûûa wa mûrîmû gîtûngo inîya wîmû
+    - Ûgûtûra tûûrû kûûkûîra ûngûkûûa wa mûrîmû gîtûngo na kûgîrîra ûkûkûûrîra wa ûndû wa mûrîmû gîtûngo
+
+- intent: Land_pollution
+  examples: |
+    - Land pollution from improper waste disposal is a serious issue.
+    - Industrial activities often contribute to land pollution.
+    - Proper waste management is essential to prevent land pollution.
+    - Uchafuzi wa ardhi kutokana na kutupa taka ovyo ni tatizo kubwa.
+    - Shughuli za viwanda mara nyingi zinasababisha uchafuzi wa ardhi.
+    - Usimamizi sahihi wa taka ni muhimu ili kuzuia uchafuzi wa ardhi.
+    - Ûkûrîgûîra wa îkînû ûkûînya mwîro ûmûnyere
+    - Mûthîka mûtûrwa aingiîa mûîha ûûrî wa mwîro
+    - Ûhûgîra wa îkînû ni wûhûrû wa kûûkûîra mwîro ûmûnyere
+
+- intent: Oil_spills
+  examples: |
+    - Oil spills can have devastating effects on marine ecosystems.
+    - Accidental oil spills are a threat to aquatic life.
+    - Strict regulations are needed to prevent oil spills.
+    - Mwagiko wa mafuta unaweza kuwa na athari mbaya kwa mifumo ya ikolojia ya baharini.
+    - Mwagiko wa mafuta usio wa makusudi ni tishio kwa maisha ya viumbe majini.
+    - Sheria kali zinahitajika ili kuzuia mwagiko wa mafuta.
+    - Îkûnyîra wa magarû aûrî wa mwîro ûkaîra
+    - Guoko wa magarû unîya wîmû nî wîrî wa ûngûkûûa wa mîrîmû gîtûngo
+    - Ûhûgîra wa îkîrî wa magarû ni wûhûrû wa kûûkûîra mwîro ûmûnyere
