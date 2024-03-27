@@ -1,33 +1,13 @@
 version: "3.1"
 
 intents:
-  - Cutting_Trees
-  - Garbage_pile_up
-  - Potholes
-  - Hanging_Power_Lines
-  - Open_sewer
-  - Industrial_pollution
-  - Illegal_dumping
-  - Transformer_damage
-  - Swollen_River
-  - Broken_Bridge
-  - Fire
-  - Unsafe_working_conditions
-  - Flooding
-  - Crop_disease
-  - Dirty_Water
-  - Open_Quarry
-  - Soil_Erosion
-  - Falling_Guard_Rail
-  - Unsafe_side_walk
-  - Open_drain
-  - Fallen_tree
-  - Afforestation
-  - Safe_Bridge
-  - Bounty_harvest
-  - Overgrown_bushes
-  - Wildlife_invasion
-  - Air_pollution
-  - Water_pollution
-  - Land_pollution
-  - Oil_spills
+  - False_News
+  - Misleading_Images
+  - Manipulated_Videos
+  - Conspiracy_Theories
+  - Clickbait_Headlines
+  - Satirical_Articles_Misinterpreted_as_Real
+  - Out_of_Context_Quotes
+  - Fake_Social_Media_Profiles
+  - Misinformation_about_Health
+  - Political_Propaganda
